@@ -4,7 +4,8 @@ class Client < User
   
   default_scope :conditions => {:role  => 'client'}
   
-  # TODO: define incoming_maintenances and executed_maintenances named_scopes
-  named_scope :incoming, lambda { |*args| {:conditions => {" scheduled_date_at < #{Time.now}"}} }
-	named_scope :executed # ordinate dal piu' recente
+  # pose maintenance for an equipment
+  # pose a new question for an equipment
+  # view questions for her equipment
+  
 end

@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   layout  :for_user
   
-  
   def index
     @users = User.find(:all)
   end
@@ -47,6 +46,10 @@ class UsersController < ApplicationController
   
   private
   def for_user
-    @user.nil? ? "application": @user.role
+    if @user && @user.role
+      @user.role
+    else
+      "application"
+    end
   end
 end

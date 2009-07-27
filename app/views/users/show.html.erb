@@ -1,16 +1,81 @@
-<% title "User" %>
+<% title "#{@user.role.titleize}: #{@user.name}" %>
+
+<!--  -->
+<% administrator_area @user do %>
+  <p>Create user</p>
+<% end %>
+
+<!--  -->
+<% secretary_area @user do  %>
+<p>vede gli interventi programmati in arrivo</p>
+
+<p>vede gli interventi da marcare come conclusi</p>
+<p>puo’ marcare un intervento come concluso</p>
+<p>vede le nuove richieste di intervento</p>
+<p>vede la voce degli interventi eseguiti</p>
+<p>puo’ modificare i dati di un intervento tecnico</p>
+<p>puo’ creare un cliente</p>
+<p>puo’ creare gli impianti in assistenza per un cliente</p>
+<p>puo’ assegnare un impianto in assistenza ad un cliente</p>
+<p>puo’ modificare la password ad un cliente</p>
+<p>puo’ modificare una domanda</p>
+<% end %>
+
+<!--  -->
+<% technician_area @user do %>
+  <p>Technician</p>
+<% end %>
+
+<!--  -->
+<% client_area @user do %>
+  <% @client = classify_from_role(@user) %>
+  <% if !@client.equipment.blank? %>
+    <h3>Equipments</h3>
+    <% for equipment in [@client.equipment] %>
+          <h4><%= equipment.name %></h4>
+          <% if !equipment.maintenances.incoming.pending.blank? %>
+            <h4>Pending Maintenances</h4>
+            <% @pending_maintenances = equipment.maintenances.incoming.pending %>
+            <% for item in @pending_maintenances %>
+              <%= item.service_type %><br/>
+              <%= item.scheduled_date_at %> <a href="">Propose change</a></p>
+            <% end %>
+          <% else %>
+            <p>No scheduled maintenance. <a href="">Propose New</a></p>
+          <% end %>
+          
+          
+          <% if !equipment.maintenances..blank? %>
+            <% for item in list %>
+              
+            <% end %>
+          <% else %>
+            
+          <% end %>
+          
+          <!-- 
+            equipment.maintenances.incoming.pending
+            equipment.maintenances.executed 
+          -->
+          <!-- 
+            :pending, :change_date
+            :executed 
+            :proposed, :propose_new 
+            :refused   
+          -->
+          
+          <p>pending maintenances ordered by nearest</p>
+          <p>executed maintenances ordered by most recent</p>
+          <p>propose a scheduled maintenance</p>
+          <p>propose new date for a scheduled maintenance</p>
+    <% end %>
+  <% else %>
+    <strong>No equipment found</strong>
+  <% end %>
+  
+  <p>change personal information</p>
+<% end %>
 
 <p>
-  <strong>Name:</strong>
-  <%=h @user.name %>
-</p>
-<p>
-  <strong>Role:</strong>
-  <%=h @user.role %>
-</p>
-
-<p>
-  <%= link_to "Edit", edit_user_path(@user) %> |
-  <%= link_to "Destroy", @user, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", users_path %>
+  <%= link_to "Edit", edit_user_path(@user) %> | <%= link_to "Back", :back %>
 </p>

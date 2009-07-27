@@ -6,7 +6,7 @@
   </p>
   <p>
     <%= f.label :role %><br />
-    <%= f.text_field :role %>
+    <%= f.select :role, User::ROLES %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

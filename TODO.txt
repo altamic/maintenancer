@@ -1,28 +1,10 @@
-fattorizzare template per scaffold per
-models, view, routes, controllers, spec 
+10 clienti
 
-assume that you have
+Ogni cliente ha 1..3 equipments
 
-smart_scaffold file_name
 
-Ruolo che consenta di creare 
-nuovi utenti con il ruolo di cliente
-
-Business Models:
-
-tecnician
-secretary
-administrator
-
-definire ruoli per
-- administrator => 
-  [:class => User, :actions => [:create, :update]]
-- secretary => index, show, update, destroy,  =>  clienti, tecnici
-- cliente    => index, show  
-- tecnician
-
-Entita’ modellate dal sistema 
-Utente 
+Entita’ modellate dal sistema
+Utente
 
 Impianto da Manutenzionare in relazione con uno o piu’ Clienti 
 
@@ -49,30 +31,25 @@ Design Grafco layout grafco 5gg
 Sub totale 10gg 
 
 Funzionalita’ Cliente 
-Attivita' Durata Stimata 
-puo’ vedere le 
-proprie manutenzioni  ordinate cronologicamente dal 
-piu’ recente 
- 7gg 
-puo’ vedere la voce interventi eseguiti ordinati cronologicamente dal 
-piu’ recente 
-4gg 
-vede i propri interventi programmate nella pagina principale 5gg 
-puo’ richiedere un nuovo intervento 2gg 
-vede i propri interventi programmati nella pagina principale 1gg 
-puo’ richiedere modifica data di un intervento programmato 5gg 
 puo’ vedere la lista degli impianti per i quali i usufruisce di 
 assistenza 
-5gg 
-puo’ vedere gli interventi programmati 1gg 
-puo’ richiedere un nuovo intervento 3gg 
+puo’ vedere le proprie manutenzioni  ordinate cronologicamente dal 
+piu’ recente 
+puo’ vedere la voce interventi eseguiti ordinati cronologicamente dal 
+piu’ recente
+vede i propri interventi programmati nella pagina principale 5gg 
+puo’ richiedere un nuovo intervento 2gg
+vede i propri interventi programmati nella pagina principale 1gg 
+puo’ richiedere modifica data di un intervento programmato 5gg 
+
+puo’ vedere gli interventi programmati 1gg
+puo’ richiedere un nuovo intervento 3gg
 puo’ modificare le sue informazioni personali 1gg 
 puo’ consultare le domande relative agli impianti analoghi al suo 7gg 
 puo’ richiedere una nuova domanda 2gg 
 Sub totale 43gg
 
 Funzionalita’ Segreteria 
-Attivita' Durata Stimata 
 vede gli interventi programmati in arrivo 5gg 
 vede gli interventi da marcare come conclusi  3gg 
 puo’ marcare un intervento come concluso 1gg 
@@ -84,18 +61,3 @@ puo’ creare gli impianti in assistenza 3gg
 puo’ assegnare un impianto in assistenza ad un cliente  5gg 
 puo’ modificare la password ad un cliente 1gg 
 puo’ modificare una domanda  1gg 
-Sub Totale 35gg 
-Deployment e Testing 
-installazione e confgurazione su server esterno 2gg 
-Tempi di lavorazione Stimati: circa 3 mesi 
-Per il prezzo preferirei discuterne di persona 
-Spese fsse 
-Hosting e Dominio 
-Costo annuale hosting  € 240 
-Nome di dominio annuale   € 12 
-Subtotale                       € 242 
-Crittografa 
-Certifcato di crittografa annuale  € 250 
-Indirizzo IP statico annuale           € 120 
-Subtotale                                 € 370 
-Dr. Michelangelo Altamore

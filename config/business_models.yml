@@ -22,8 +22,8 @@ maintenance:
 		- client:references
 		- technician:references
 		- service_type:string
-		- scheduled_date_at:date
-		- effective_date_at:date
+		- scheduled_at:date
+		- effective_at:date
 		- duration_in_hours:decimal
 		- accepted:boolean
 		- completed:boolean
@@ -39,6 +39,7 @@ maintenance:
 	
 question:
 	- attributes:
+		- accepted:boolean
 		- argument:string
 		- text:string
 		- answer:text
@@ -79,5 +80,15 @@ client:
 	  - "has_one :equipment, :through => :maintenances"
 		- "has_many :questions"
 	-	virtual_attributes:
-		- "named_scope :incoming_maintenances, lambda {}" # ordinate dal piu' recente 
-		- "named_scope :executed_maintenances " 				  # ordinate dal piu' recente
+		- "named_scope :incoming_maintenances # ordinate dal piu' recente 
+		- "named_scope :executed_maintenances # ordinate dal piu' recente
+
+
+user:
+	- attributes:
+		- first_name:string
+		- last_name:string
+		- phone:string
+		- address:string
+		- email:string
+		- role:string
