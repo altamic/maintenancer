@@ -1,0 +1,48 @@
+<% title "Maintenance" %>
+
+<p>
+  <strong>Equipment:</strong>
+  <%=h @maintenance.equipment_name %>
+</p>
+<p>
+  <strong>Client:</strong>
+  <%=h @maintenance.client_name %>
+</p>
+<p>
+  <strong>Technician:</strong>
+  <%=h @maintenance.technician_name %>
+</p>
+<p>
+  <strong>Service Type:</strong>
+  <%=h @maintenance.service_type %>
+</p>
+<p>
+  <strong>Scheduled Date At:</strong>
+  <%=h @maintenance.scheduled_date_at %>
+</p>
+<p>
+  <strong>Effective Date At:</strong>
+  <%=h @maintenance.effective_date_at %>
+</p>
+<p>
+  <strong>Duration In Hours:</strong>
+  <%=h @maintenance.duration_in_hours %>
+</p>
+<p>
+  <strong>Accepted:</strong>
+  <%=h @maintenance.accepted %>
+</p>
+<p>
+  <strong>Completed:</strong>
+  <%=h @maintenance.completed %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%=h @maintenance.note %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_maintenance_path(@maintenance) %> |
+  <%= link_to "Destroy", @maintenance, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", maintenances_path %>
+</p>

@@ -1,0 +1,25 @@
+one:
+  equipment: 
+  client: 
+  technician: 
+  service_type: MyString
+  scheduled_date_at: 2009-07-26
+  effective_date_at: 2009-07-26
+  duration_in_hours: 9.99
+  accepted: false
+  completed: false
+  technician: 
+  note: MyText
+
+two:
+  equipment: 
+  client: 
+  technician: 
+  service_type: MyString
+  scheduled_date_at: 2009-07-26
+  effective_date_at: 2009-07-26
+  duration_in_hours: 9.99
+  accepted: false
+  completed: false
+  technician: 
+  note: MyText

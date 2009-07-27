@@ -1,0 +1,45 @@
+<%= error_messages_for :maintenance %>
+<% form_for @maintenance do |f| %>
+  <p>
+    <%= f.label :client %><br />
+    <%= f.collection_select(:client_id, Client.all, :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <b>Scope through selected client</b><br />
+    <%= f.label :equipment %><br />
+    <%= f.collection_select(:equipment_id, Equipment.all, :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :technician %><br />
+    <%= f.collection_select(:technician_id, Technician.all, :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :service_type %><br />
+    <%= f.text_field :service_type %>
+  </p>
+  <p>
+    <%= f.label :scheduled_date_at %><br />
+    <%= f.date_select :scheduled_date_at %>
+  </p>
+  <p>
+    <%= f.label :effective_date_at %><br />
+    <%= f.date_select :effective_date_at %>
+  </p>
+  <p>
+    <%= f.label :duration_in_hours %><br />
+    <%= f.text_field :duration_in_hours %>
+  </p>
+  <p>
+    <%= f.label :accepted %><br />
+    <%= f.check_box :accepted %>
+  </p>
+  <p>
+    <%= f.label :completed %><br />
+    <%= f.check_box :completed %>
+  </p>
+  <p>
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

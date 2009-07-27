@@ -1,0 +1,25 @@
+<% title "Equipment" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Note</th>
+    <th>Maintenance Periodicity In Months</th>
+  </tr>
+  <% for equipment in @equipment %>
+    <tr>
+      <td><%=h equipment.name %></td>
+      <td><%=h equipment.code %></td>
+      <td><%=h equipment.description %></td>
+      <td><%=h equipment.note %></td>
+      <td><%=h equipment.maintenance_periodicity_in_months %></td>
+      <td><%= link_to "Show", equipment %></td>
+      <td><%= link_to "Edit", edit_equipment_path(equipment) %></td>
+      <td><%= link_to "Destroy", equipment, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Equipment", new_equipment_path %></p>

@@ -1,0 +1,28 @@
+<% title "Equipment" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @equipment.name %>
+</p>
+<p>
+  <strong>Code:</strong>
+  <%=h @equipment.code %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @equipment.description %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%=h @equipment.note %>
+</p>
+<p>
+  <strong>Maintenance Periodicity In Months:</strong>
+  <%=h @equipment.maintenance_periodicity_in_months %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_equipment_path(@equipment) %> |
+  <%= link_to "Destroy", @equipment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", equipments_path %>
+</p>
