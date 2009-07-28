@@ -1,94 +1,92 @@
-equipment:
-	- relations:
-		- "has_many :maintenances"
-		-	"has_one :client, :through => :maintenances"
-		- "has_many :issues, :class_name => 'Question'"
+---
+	equipment:
+		- relations:
+			- "has_many :maintenances"
+			-	"has_one :client, :through => :maintenances"
+			- "has_many :issues, :class_name => 'Question'"
+		
+		- attributes:
+		  - name:string
+		  - code:string
+		  - description:string 
+		  - note:text
+		  - maintenance_periodicity_in_months:integer
+		
+	maintenance:
+		- constants:
+			- STATUSES = %w(accepted refused pending complete)
+			- SERVICE_TYPES = %w(ordinario straordinario)
 	
-  - attributes:
-    - name:string
-    - code:string
-    - description:string 
-    - note:text
-    - maintenance_periodicity_in_months:integer
+	  - attributes:
+			-	equipment:references
+			- client:references
+			- technician:references
+			- service_type:string
+			- scheduled_at:date
+			- effective_at:date
+			- duration_in_hours:decimal
+			- accepted:boolean
+			- completed:boolean
+			- note:text
 	
-
-maintenance:
-	- constants:
-		- STATUSES = %w(accepted refused pending complete)
-		- SERVICE_TYPES = %w(ordinario straordinario)
+		- relations:
+			- belongs_to :equipment
+			- belongs_to :client
+			- belongs_to :technician
 	
-  - attributes:
-		-	equipment:references
-		- client:references
-		- technician:references
-		- service_type:string
-		- scheduled_at:date
-		- effective_at:date
-		- duration_in_hours:decimal
-		- accepted:boolean
-		- completed:boolean
-		- note:text
-	
-	- relations:
-		- belongs_to :equipment
-		- belongs_to :client
-		- belongs_to :technician
-	
-	- virtual_attributes:
+		- virtual_attributes:
 		
 	
-question:
-	- attributes:
-		- accepted:boolean
-		- argument:string
-		- text:string
-		- answer:text
-		- public:boolean
+	question:
+		- attributes:
+			- accepted:boolean
+			- argument:string
+			- text:string
+			- answer:text
+			- public:boolean
 	
-	- relations:
-		- belongs_to: equipment
-		- belongs_to: client
-	
-
-secretary:
-	- relations:
-		- "has_many :maintenances"
-	  - "has_one :equipment, :through => :maintenances"
-		- "has_many :questions"
-	
-	virtual_attributes:
-		- "named_scope :incoming_clients_maintenances, lambda {}" # for any client ordinate dal piu' recente"
-		- "named_scope :executed_clients_maintenances, lambda {}" # for any client ordinate dal piu' recente"
-		- change_scheduled_maintenance
-		- change_maintenance_status
+		- relations:
+			- belongs_to: equipment
+			- belongs_to: client
 	
 
-tecnician:
-	- relations:
-		- "has_many :maintenances"
-	  - "has_one :equipment, :through => :maintenances"
-		- "has_many :questions"
+	secretary:
+		- relations:
+			- "has_many :maintenances"
+		  - "has_one :equipment, :through => :maintenances"
+			- "has_many :questions"
 	
-	- virtual_attributes:
-		- "named_scope :incoming_maintenances, lambda {}" # ordinate dal piu' recente
-		- "named_scope :executed_maintenances" 						# ordinate dal piu' recente
+		virtual_attributes:
+			- "named_scope :incoming_clients_maintenances, lambda {}" # for any client ordinate dal piu' recente"
+			- "named_scope :executed_clients_maintenances, lambda {}" # for any client ordinate dal piu' recente"
+			- change_scheduled_maintenance
+			- change_maintenance_status
+		
+	tecnician:
+		- relations:
+			- "has_many :maintenances"
+		  - "has_one :equipment, :through => :maintenances"
+			- "has_many :questions"
 	
-
-client:
-	- relations:
-		- "has_many :maintenances"
-	  - "has_one :equipment, :through => :maintenances"
-		- "has_many :questions"
-	-	virtual_attributes:
-		- "named_scope :incoming_maintenances # ordinate dal piu' recente 
-		- "named_scope :executed_maintenances # ordinate dal piu' recente
-
-
-user:
-	- attributes:
-		- first_name:string
-		- last_name:string
-		- phone:string
-		- address:string
-		- email:string
-		- role:string
+		- virtual_attributes:
+			- "named_scope :incoming_maintenances, lambda {}" # ordinate dal piu' recente
+			- "named_scope :executed_maintenances" 						# ordinate dal piu' recente
+		
+	client:
+		- relations:
+			- "has_many :maintenances"
+		  - "has_one :equipment, :through => :maintenances"
+			- "has_many :questions"
+		-	virtual_attributes:
+			- "named_scope :incoming_maintenances # ordinate dal piu' recente 
+			- "named_scope :executed_maintenances # ordinate dal piu' recente
+		
+	user:
+		- attributes:
+			- first_name:string
+			- last_name:string
+			- phone:string
+			- address:string
+			- email:string
+			- role:string
+		

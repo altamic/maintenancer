@@ -1,7 +1,16 @@
+Generare dati fasulli
+
 10 clienti
 
 Ogni cliente ha 1..3 equipments
 
+Ogni equipment ha 0..2 pending maintenances
+Ogni equipment ha 0..6 executed maintenances
+Ogni equipment ha 0..3 refused maintenances
+Ogni equipment ha 0..2 proposed maintenances
+
+
+4 tecnici
 
 Entita’ modellate dal sistema
 Utente

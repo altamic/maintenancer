@@ -7,8 +7,7 @@
 
 <!--  -->
 <% secretary_area @user do  %>
-<p>vede gli interventi programmati in arrivo</p>
-
+<p>vede gli interventi pendenti programmati in arrivo (late)</p>
 <p>vede gli interventi da marcare come conclusi</p>
 <p>puo’ marcare un intervento come concluso</p>
 <p>vede le nuove richieste di intervento</p>
@@ -38,14 +37,13 @@
             <% @pending_maintenances = equipment.maintenances.incoming.pending %>
             <% for item in @pending_maintenances %>
               <%= item.service_type %><br/>
-              <%= item.scheduled_date_at %> <a href="">Propose change</a></p>
+              <%= item.scheduled_date_at %> <%= link_to "Propose change" %></p>
             <% end %>
           <% else %>
-            <p>No scheduled maintenance. <a href="">Propose New</a></p>
+            <p>No scheduled maintenance. <%= link_to "Propose New"%></p>
           <% end %>
           
-          
-          <% if !equipment.maintenances..blank? %>
+          <% if !equipment.maintenances.executed.blank? %>
             <% for item in list %>
               
             <% end %>
@@ -57,6 +55,7 @@
             equipment.maintenances.incoming.pending
             equipment.maintenances.executed 
           -->
+          
           <!-- 
             :pending, :change_date
             :executed 
