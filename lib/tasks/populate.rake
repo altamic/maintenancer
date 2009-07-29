@@ -49,7 +49,7 @@ namespace :db do
     end
     
     Equipment.populate 30 do |equipment|
-      equipment.name                              = "Equipment #{Faker::Name.last_name}"
+      equipment.name                              = Faker::Name.last_name
       equipment.code                              = Faker::PhoneNumber.phone_number
       equipment.description                       = Faker::Lorem.sentence
       equipment.note                              = Faker::Lorem.paragraph
@@ -64,8 +64,8 @@ namespace :db do
       maintenance.completed         = [true, false]
       maintenance.scheduled_date_at = maintenance.accepted ? [1.month.from_now..6.month.from_now] : nil
       maintenance.effective_date_at = nil
-      maintenance.duration_in_hours = maintenance.completed ? [0.5, 1.0, 2.0, 2.5, 3.0, 3.5, 4] : nil 
-      maintenance.technician_id     = Technician.all.map(&:id) unless maintenance.accepted.nil? 
+      maintenance.duration_in_hours = maintenance.accepted && maintenance.completed ? [0.5, 1.0, 2.0, 2.5, 3.0, 3.5, 4] : nil 
+      maintenance.technician_id     = maintenance.accepted ? Technician.all.map(&:id) : nil
       maintenance.note              = Faker::Lorem.paragraph
     end
   end

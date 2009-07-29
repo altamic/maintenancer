@@ -34,7 +34,7 @@ class Maintenance < ActiveRecord::Base
     when "proposed"
       return "#{status} maintenance for #{equipment_name} of #{client_name}"
     when "refused"
-      return "#{status} maintenance for #{equipment_name}"
+      return "#{status} maintenance for #{equipment_name} of #{client_name}"
     end
   end
   

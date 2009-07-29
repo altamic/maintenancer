@@ -6,7 +6,7 @@
 </p>
 <p>
   <strong>Technician:</strong>
-  <%=h @maintenance.technician_name %>
+  <%=h @maintenance.technician_name unless @maintenance.technician_id.nil? %>
 </p>
 
 <% if @maintenance.status == '' %>

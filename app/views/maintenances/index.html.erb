@@ -20,7 +20,7 @@
       <td><%=h maintenance.equipment_name %></td>
       <td><%=h maintenance.service_type %></td>      
       <td><%=h maintenance.client_name %></td>
-      <td><%=h maintenance.technician_name unless maintenance.accepted.nil? %></td>
+      <td><%=h maintenance.technician_name unless maintenance.technician_id.nil? %></td>
       <td><%=h maintenance.scheduled_date_at %></td>
       <td><%= link_to "Show", maintenance %></td>
     </tr>
