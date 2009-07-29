@@ -17856,3 +17856,99 @@ Rendering maintenances/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 19) AND ("users"."role" = 'client') [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) AND ("users"."role" = 'technician') [0m
 Completed in 245ms (View: 211, DB: 21) | 200 OK [http://localhost/maintenances]
+
+
+Processing MaintenancesController#show (for 127.0.0.1 at 2009-07-29 20:58:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMaintenance Load (0.3ms)[0m   [0;1mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/show
+  [4;35;1mEquipment Load (0.2ms)[0m   [0mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;36;1mTechnician Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) AND ("users"."role" = 'technician') [0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/maintenances/2]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 20:58:35) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMaintenance Load (0.3ms)[0m   [0mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;36;1mClient Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;35;1mEquipment Load (2.2ms)[0m   [0mSELECT * FROM "equipment" [0m
+  [4;36;1mTechnician Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (31.7ms)
+Completed in 40ms (View: 29, DB: 4) | 200 OK [http://localhost/maintenances/2/edit]
+
+
+Processing MaintenancesController#show (for 127.0.0.1 at 2009-07-29 20:58:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMaintenance Load (0.3ms)[0m   [0mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/show
+  [4;36;1mEquipment Load (0.2ms)[0m   [0;1mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;35;1mTechnician Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) AND ("users"."role" = 'technician') [0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/maintenances/2]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 20:58:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMaintenance Load (0.3ms)[0m   [0;1mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;35;1mClient Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;36;1mEquipment Load (2.3ms)[0m   [0;1mSELECT * FROM "equipment" [0m
+  [4;35;1mTechnician Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (33.9ms)
+Completed in 114ms (View: 32, DB: 4) | 200 OK [http://localhost/maintenances/2/edit]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 20:59:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMaintenance Load (0.3ms)[0m   [0;1mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;35;1mEquipment Load (0.3ms)[0m   [0mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;35;1mEquipment Load (2.2ms)[0m   [0mSELECT * FROM "equipment" [0m
+  [4;36;1mTechnician Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (24.7ms)
+Completed in 43ms (View: 32, DB: 4) | 200 OK [http://localhost/maintenances/2/edit]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 21:01:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMaintenance Load (0.3ms)[0m   [0mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;36;1mEquipment Load (0.2ms)[0m   [0;1mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;36;1mEquipment Load (2.1ms)[0m   [0;1mSELECT * FROM "equipment" [0m
+  [4;35;1mTechnician Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (26.6ms)
+Completed in 44ms (View: 33, DB: 4) | 200 OK [http://localhost/maintenances/2/edit]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 21:01:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMaintenance Load (0.3ms)[0m   [0;1mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;35;1mEquipment Load (0.3ms)[0m   [0mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;36;1mClient Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;35;1mEquipment Load (2.2ms)[0m   [0mSELECT * FROM "equipment" [0m
+  [4;36;1mTechnician Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (27.9ms)
+Completed in 111ms (View: 100, DB: 5) | 200 OK [http://localhost/maintenances/2/edit]
+
+
+Processing MaintenancesController#edit (for 127.0.0.1 at 2009-07-29 21:01:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMaintenance Load (0.3ms)[0m   [0mSELECT * FROM "maintenances" WHERE ("maintenances"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering maintenances/edit
+  [4;36;1mEquipment Load (0.3ms)[0m   [0;1mSELECT * FROM "equipment" WHERE ("equipment"."id" = 3) [0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'client') [0m
+  [4;36;1mEquipment Load (2.2ms)[0m   [0;1mSELECT * FROM "equipment" [0m
+  [4;35;1mTechnician Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."role" = 'technician') [0m
+Rendered maintenances/_form (26.6ms)
+Completed in 44ms (View: 33, DB: 4) | 200 OK [http://localhost/maintenances/2/edit]

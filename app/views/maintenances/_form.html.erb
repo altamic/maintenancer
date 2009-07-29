@@ -30,11 +30,13 @@
   </p>
   <p>
     <%= f.label :accepted %>
-    <%= f.check_box :accepted %>
+    <%= f.radio_button :accepted, :yes %>Yes
+    <%= f.radio_button :accepted, :no %>No <br />
   </p>
   <p>
     <%= f.label :completed %>
-    <%= f.check_box :completed %>
+    <%= f.radio_button :completed, :yes %>Yes
+    <%= f.radio_button :completed, :no %>No <br />
   </p>
   <p>
     <%= f.label :note %><br />
