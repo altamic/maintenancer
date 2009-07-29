@@ -1,6 +1,6 @@
 class Maintenance < ActiveRecord::Base
   STATUSES = %w(accepted refused pending complete)
-  SERVICE_TYPES = %w(ordinario straordinario)
+  SERVICE_TYPES = %w(regular occasional urgent)
   
   belongs_to :equipment
   belongs_to :client
@@ -24,7 +24,20 @@ class Maintenance < ActiveRecord::Base
   named_scope :refused, :conditions => { :accepted => false, :completed => false }
   named_scope :executed, :conditions => { :accepted => true, :completed => true }
   named_scope :proposed, :conditions => { :accepted => nil }
-
+  
+  def name
+    case status
+    when "pending"
+      return "#{status} maintenance scheduled on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
+    when "complete"
+      return "#{status} maintenance on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
+    when "proposed"
+      return "#{status} maintenance for #{equipment_name} of #{client_name}"
+    when "refused"
+      return "#{status} maintenance for #{equipment_name}"
+    end
+  end
+  
   def status
     if accepted
       if completed
@@ -32,7 +45,9 @@ class Maintenance < ActiveRecord::Base
       else
         return "pending"
       end
-    elsif not accepted
+    elsif accepted.nil?
+      return "proposed"
+    else
       return "refused"
     end
   end

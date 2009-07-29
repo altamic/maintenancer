@@ -1,26 +1,30 @@
 <% title "Maintenances" %>
 
+<!-- Group by status -->
+<!-- Order by date ASC, priority -->
+
+
 <table>
   <tr>
     <th>Equipment</th>
+    <th>Service Type</th>
     <th>Client</th>
     <th>Technician</th>
-    <th>Service Type</th>
     <th>Scheduled Date At</th>
-    <th>Status</th>
+
   </tr>
-  <% for maintenance in @maintenances %>
+  <% @maintenances.each do |status, maintenances| %>
+    <h3><%= status %></h3>
+    <% for maintenance in maintenances %>
     <tr>
       <td><%=h maintenance.equipment_name %></td>
+      <td><%=h maintenance.service_type %></td>      
       <td><%=h maintenance.client_name %></td>
-      <td><%=h maintenance.technician_name %></td>
-      <td><%=h maintenance.service_type %></td>
+      <td><%=h maintenance.technician_name unless maintenance.accepted.nil? %></td>
       <td><%=h maintenance.scheduled_date_at %></td>
-      <td><%=h maintenance.status %></td>
       <td><%= link_to "Show", maintenance %></td>
-      <td><%= link_to "Edit", edit_maintenance_path(maintenance) %></td>
-      <td><%= link_to "Destroy", maintenance, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
+    <% end %>
   <% end %>
 </table>
 

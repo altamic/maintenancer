@@ -25,7 +25,7 @@ namespace :db do
       secretary.first_name   = Faker::Name.first_name
       secretary.last_name    = Faker::Name.last_name
       secretary.phone        = Faker::PhoneNumber.phone_number
-      secretary.address      = "#{Faker::Address.street_address}\n#{Faker::Address.city}"
+      secretary.address      = "#{Faker::Address.street_address}, \n#{Faker::Address.city}"
       secretary.email        = email(secretary.first_name, secretary.last_name)
       secretary.role         = 'secretary'
     end
@@ -59,13 +59,13 @@ namespace :db do
     Maintenance.populate 100 do |maintenance|
       maintenance.equipment_id      = Equipment.all.map(&:id)
       maintenance.client_id         = Client.all.map(&:id)
-      maintenance.technician_id     = Technician.all.map(&:id)
-      maintenance.service_type      = ['ordinario', 'straordinario']
+      maintenance.service_type      = %w(regular occasional urgent)
       maintenance.accepted          = [nil, true, false]
       maintenance.completed         = [true, false]
       maintenance.scheduled_date_at = maintenance.accepted ? [1.month.from_now..6.month.from_now] : nil
       maintenance.effective_date_at = nil
       maintenance.duration_in_hours = maintenance.completed ? [0.5, 1.0, 2.0, 2.5, 3.0, 3.5, 4] : nil 
+      maintenance.technician_id     = Technician.all.map(&:id) unless maintenance.accepted.nil? 
       maintenance.note              = Faker::Lorem.paragraph
     end
   end

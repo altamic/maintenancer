@@ -1,39 +1,56 @@
 <% title "#{@user.role.titleize}: #{@user.name}" %>
 
-<!--  -->
+<!-- logged_user is administrator -->
 <% administrator_area @user do %>
-  <p>Create user</p>
+  <b>Phone</b>: <%= @user.phone %> <br /> <br />
+  <b>Email</b>: <%= @user.email %>
+  
+  <p><%= link_to "Create New User", new_user_path %></p>
 <% end %>
 
 <!--  -->
 <% secretary_area @user do  %>
+  <b>Phone</b>: <%= @user.phone %> <br /> <br />
+  <b>Email</b>: <%= @user.email %>
+<p>assegna un tecnico ad un intervento proposto</p>
 <p>vede gli interventi pendenti programmati in arrivo (late)</p>
 <p>vede gli interventi da marcare come conclusi</p>
 <p>puo’ marcare un intervento come concluso</p>
 <p>vede le nuove richieste di intervento</p>
 <p>vede la voce degli interventi eseguiti</p>
 <p>puo’ modificare i dati di un intervento tecnico</p>
+<p><%= link_to "New User", new_user_path %></p>
 <p>puo’ creare un cliente</p>
 <p>puo’ creare gli impianti in assistenza per un cliente</p>
 <p>puo’ assegnare un impianto in assistenza ad un cliente</p>
 <p>puo’ modificare la password ad un cliente</p>
 <p>puo’ modificare una domanda</p>
+
+
+
 <% end %>
 
 <!--  -->
 <% technician_area @user do %>
-  <p>Technician</p>
+  <b>Phone</b>: <%= @user.phone %> <br /> <br />
+  <b>Email</b>: <%= @user.email %> <br />
+  <p>recent completed maintenances</p>
+  <p>Equipments worked (count)</p>
 <% end %>
 
 <!--  -->
 <% client_area @user do %>
+  <b>Phone</b>: <%= @user.phone %> <br /> <br />
+  <b>Email</b>: <%= @user.email %> <br /> <br />
+  <b>Address</b>: <%= simple_format @user.address %>
+  
   <% @client = classify_from_role(@user) %>
   <% if !@client.equipment.blank? %>
-    <h3>Equipments</h3>
+    <h2>Equipments</h2>
     <% for equipment in [@client.equipment] %>
-          <h4><%= equipment.name %></h4>
+          <h3><%= equipment.name %></h3>
           <% if !equipment.maintenances.incoming.pending.blank? %>
-            <h4>Pending Maintenances</h4>
+            <h3>Pending Maintenances</h3>
             <% @pending_maintenances = equipment.maintenances.incoming.pending %>
             <% for item in @pending_maintenances %>
               <%= item.service_type %><br/>
@@ -41,14 +58,6 @@
             <% end %>
           <% else %>
             <p>No scheduled maintenance. <%= link_to "Propose New"%></p>
-          <% end %>
-          
-          <% if !equipment.maintenances.executed.blank? %>
-            <% for item in list %>
-              
-            <% end %>
-          <% else %>
-            
           <% end %>
           
           <!-- 

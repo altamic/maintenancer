@@ -1,6 +1,6 @@
 class MaintenancesController < ApplicationController
   def index
-    @maintenances = Maintenance.find(:all)
+    @maintenances = Maintenance.all.group_by(&:status)
   end
   
   def show
