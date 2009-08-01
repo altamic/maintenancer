@@ -12,23 +12,25 @@
     <%= f.label :scheduled_date_at, "Scheduled on" %>
     <%= f.date_select :scheduled_date_at %>
   </p>
-  <p>
-    <%= f.label :effective_date_at, "Effective on" %>
-    <%= f.date_select :effective_date_at %>
-  </p>
 
   <p>
     <%= f.label :accepted %>
     <%= f.radio_button :accepted, false %>No 
     <%= f.radio_button :accepted, true %>Yes 
 
-    <%= f.label :duration_in_hours %>
-    <%= f.text_field :duration_in_hours, :size => '4' %>
   </p>
   <p>
     <%= f.label :completed %>
     <%= f.radio_button :completed, false %>No 
     <%= f.radio_button :completed, true %>Yes <br />
+  </p>
+  <p>
+    <%= f.label :duration_in_hours %>
+    <%= f.text_field :duration_in_hours, :size => '4' %>
+  </p>
+  <p>
+    <%= f.label :effective_date_at, "Effective on" %>
+    <%= f.date_select :effective_date_at %>
   </p>
   <p>
     <%= f.label :note %><br />

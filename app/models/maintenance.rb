@@ -29,7 +29,7 @@ class Maintenance < ActiveRecord::Base
     case status
     when "pending"
       return "#{status} maintenance scheduled on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
-    when "complete"
+    when "completed"
       return "#{status} maintenance on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
     when "proposed"
       return "#{status} maintenance for #{equipment_name} of #{client_name}"
@@ -41,7 +41,7 @@ class Maintenance < ActiveRecord::Base
   def status
     if accepted
       if completed
-        return "complete"
+        return "completed"
       else
         return "pending"
       end
