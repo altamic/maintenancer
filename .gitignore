@@ -1,0 +1,7 @@
+DB_Store
+log/*.log
+tmp/**/*
+vendor/rails
+config/database.yml
+db/*.sqlite3
+
