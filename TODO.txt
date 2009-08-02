@@ -2,31 +2,9 @@ Un cliente ha molti impianti di manutenzione
 
 Impianto da Manutenzionare in relazione con uno o piu’ Clienti 
 
-• periodicita’ interventi 
-Intervento di Manutenzione 
-in relazione con un Cliente ed un Impianto di Manutenzione 
-• tipo intervento (ordinario/straordinario) 
-• data prevista intervento 
-• data effettiva intervento 
-• durata 
-• accettato (si’/no) 
-• completato (si’/no) 
-Domanda
-in relazione con un Cliente 
-• argomento 
-• domanda 
-• risposta 
-• visibile a tutti (si’/no)
-Tempi di lavorazione
-Funzionalita' generiche 
-Attivita' Durata Stimata 
-Sistema Login 5gg 
-Design Grafco layout grafco 5gg 
-Sub totale 10gg 
-
 Funzionalita’ Cliente 
 puo’ vedere la lista degli impianti per i quali i usufruisce di 
-assistenza 
+assistenza
 puo’ vedere le proprie manutenzioni  ordinate cronologicamente dal 
 piu’ recente 
 puo’ vedere la voce interventi eseguiti ordinati cronologicamente dal 

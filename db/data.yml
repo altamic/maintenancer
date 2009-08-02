@@ -1,0 +1,2006 @@
+
+--- 
+equipment: 
+  columns: 
+  - id
+  - name
+  - code
+  - description
+  - note
+  - maintenance_periodicity_in_months
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Schaden
+    - (831)973-5078
+    - Sunt aperiam sunt sit quo aut eligendi.
+    - Voluptas voluptatem hic consequuntur occaecati. Porro necessitatibus non sapiente consequuntur facilis qui dolore. Quia at impedit vel doloremque quae neque. Assumenda est eveniet at ea.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "2"
+    - Hilll
+    - 1-029-983-2581 x685
+    - Est labore fuga in molestias quis qui incidunt omnis.
+    - Aperiam voluptas facilis natus ad fugiat consequatur. Quo molestiae voluptas officia et laborum consequatur. Quia nesciunt dolorum ipsa esse mollitia vero aperiam. Laborum deleniti sunt at veritatis dolorem porro. Saepe nam inventore qui et et deleniti aut.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "3"
+    - Fahey
+    - 669-789-1411
+    - Est qui sint ut beatae impedit ab praesentium.
+    - Doloremque fugiat sequi dolore nam totam. Laborum aut impedit ratione omnis facilis. Qui praesentium et autem animi aperiam. Reiciendis non et autem ipsum mollitia quia nesciunt deserunt. Unde nihil magni voluptates quis.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "4"
+    - Hackett
+    - (087)069-8908 x73491
+    - Ut sit dolorum consequatur aut voluptatem ut.
+    - Excepturi qui qui nihil esse beatae. Et qui voluptatum maxime aut. Voluptate repudiandae aperiam recusandae incidunt voluptas.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "5"
+    - Stehr
+    - 754.106.1659 x8820
+    - Perferendis ducimus sit aut nesciunt soluta praesentium.
+    - Modi doloribus nihil dolor sint. Voluptas dolore facere quis eum earum temporibus velit laboriosam. Tenetur assumenda praesentium facere ducimus et exercitationem error odit. Incidunt minus aut qui consequuntur eius quia. Quidem iusto maxime alias deleniti laudantium sed rerum.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "6"
+    - Jacobi
+    - 410-183-9323 x776
+    - Omnis quibusdam ut quia eos praesentium est neque.
+    - Veritatis voluptate rerum quod. Saepe similique sed enim nostrum eum. Et doloribus mollitia consequuntur eveniet. Natus quo et quia nobis sit dolorem ratione.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "7"
+    - Klein
+    - 1-969-803-0263 x8075
+    - Et vitae sed fuga.
+    - Sequi quia aut error necessitatibus molestiae. Tenetur sequi enim rerum consequatur. Laudantium ad pariatur sit earum aperiam accusantium maiores. Doloribus vel eos porro excepturi inventore maxime accusantium dolor. Aliquid nam sed fugit velit est.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "8"
+    - Johnston
+    - (144)772-7648
+    - Repellat cupiditate minima aut.
+    - Sed animi ipsa ut voluptatem doloribus. Perferendis aut commodi saepe non nobis et dolore. At reprehenderit veritatis velit aut consequatur atque et quasi. Totam est est ut velit sapiente.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "9"
+    - Kerluke
+    - 392.818.8391
+    - Dolor iste odit deleniti et libero et enim.
+    - Est est aperiam deserunt occaecati provident porro. Tenetur eum itaque nemo commodi animi. Aliquam esse velit error voluptatem repudiandae. Fuga ut omnis id.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "10"
+    - Schowalter
+    - 728-514-9420 x2518
+    - Velit sint atque voluptas et temporibus cum consequatur.
+    - Voluptates suscipit et sapiente nihil et. Architecto sint nam quia. Optio aliquid laudantium omnis perspiciatis dicta dolor. Ut aut corporis iste excepturi.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "11"
+    - Rolfson
+    - (622)525-2859
+    - Nam quas blanditiis cumque ducimus quod.
+    - Voluptatem et ab eos et. Perferendis earum delectus iusto. Porro quae cumque molestiae a.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "12"
+    - Grant
+    - 183-066-3890
+    - Quas a voluptatem optio perspiciatis dolore ut.
+    - Sapiente sint velit laudantium quis iusto provident quos. Debitis numquam qui et voluptatibus id quaerat omnis. Totam quia voluptas praesentium repellendus. Tempora perferendis ea hic. Et debitis est recusandae.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "13"
+    - Mann
+    - 933-773-5494
+    - Ut sed voluptatibus sed enim ea incidunt dolores.
+    - Consequatur numquam dolor animi culpa nisi ipsam qui inventore. Veritatis ut et dicta rerum. Asperiores facilis harum at corrupti ut unde cupiditate. Delectus ab et saepe.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "14"
+    - Ryan
+    - 329.555.3477 x91918
+    - Porro sunt itaque deleniti sed repellendus commodi.
+    - Qui molestiae id corporis molestiae. Est vel consequatur sit ut ut aut iure. Et quod voluptatem facere quia officiis nesciunt sed soluta.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "15"
+    - Buckridge
+    - (734)159-7363 x74553
+    - Aut ipsa mollitia placeat dolores accusantium at.
+    - Eaque debitis porro doloremque. Aperiam ex ipsam porro nobis necessitatibus. Fugiat omnis qui est aut et.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "16"
+    - Mitchell
+    - 1-154-895-7508
+    - Possimus quidem omnis cumque itaque occaecati.
+    - Nostrum inventore vero quas sed. Explicabo inventore deleniti architecto tempora animi et id. Aut fuga dignissimos asperiores ut non. Ea rerum non beatae optio voluptate exercitationem. Nisi facere eligendi fugit.
+    - "12"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "17"
+    - Langosh
+    - 679-782-6309
+    - Illo cumque dolore iusto.
+    - Nihil sapiente qui aut. Nemo iusto recusandae non repellendus aperiam facere quaerat. Molestiae consequatur modi nesciunt iste. Vero non neque sit velit deleniti consequuntur delectus.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "18"
+    - Bergstrom
+    - (680)316-9591 x84911
+    - Reprehenderit quasi quaerat rerum earum in.
+    - Dolorum quam corrupti expedita consequatur est iste error quas. Voluptates eius illo sed dignissimos. Harum ipsum aut praesentium voluptatibus laudantium qui placeat facilis.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "19"
+    - Sipes
+    - 1-314-041-0037 x95574
+    - Iste ut dolores odio minus quidem.
+    - Laborum aliquid et ut ex velit labore. Quis aut magnam non sit est. Harum vero voluptatibus accusantium. Corrupti distinctio repudiandae eos dolores molestiae dolorum dolore. Et voluptas et voluptatem quibusdam et.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "20"
+    - O'Kon
+    - 1-831-235-8750
+    - Iure quia accusamus error ut rem beatae ea odio.
+    - Laboriosam ea et qui laborum maiores ut rerum. Iusto fugit cum molestias unde quia eius voluptatem. Qui voluptatem modi laborum. Voluptas ea minima ducimus itaque quidem ad.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "21"
+    - Luettgen
+    - 116.037.6536
+    - Quis et quod amet adipisci libero quia placeat.
+    - Molestiae ut possimus repellendus et quibusdam quidem. Eligendi odit saepe repellendus. Facilis ipsum excepturi et aut suscipit commodi.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "22"
+    - Hyatt
+    - 1-808-679-1322
+    - Soluta quibusdam est perferendis.
+    - Ut tempore illo eos incidunt et et. Culpa assumenda laborum porro sint quo. Provident tempora maxime ut et aliquam ipsa consequatur esse.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "23"
+    - Hahn
+    - 198-961-4185
+    - Adipisci qui quisquam aut eaque.
+    - Sit sed doloremque dolorem est blanditiis quis et. Quod voluptatem nulla pariatur corrupti. Ut nostrum et sed. Quia iusto voluptatum expedita consectetur fugit nihil illum repellendus.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "24"
+    - Osinski
+    - 1-366-198-0606 x1507
+    - Reprehenderit libero excepturi provident distinctio praesentium qui.
+    - Quis ex aperiam dolorem ab fuga et. Tempore tempora et dolor praesentium libero et sed dolore. Velit odio iste explicabo fugiat molestias voluptas. Numquam ipsum vel qui facere neque dolorum similique illo. Non non iusto aut.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "25"
+    - Kutch
+    - 588-852-3453 x6727
+    - Ratione tenetur et dolores sed quia quam atque eum.
+    - Enim libero similique maxime qui consequatur non. Quod voluptatem sapiente ipsa doloremque reprehenderit voluptatibus culpa. Aspernatur et aliquam cumque non dolor.
+    - "12"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "26"
+    - Weissnat
+    - (480)063-6510
+    - Omnis nesciunt ullam aperiam et ipsam vero natus.
+    - Amet in fugiat officia magnam. Culpa voluptatem molestias nulla et itaque. Et quam et aut laboriosam.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "27"
+    - Ziemann
+    - (320)121-2191
+    - Quasi officiis maiores voluptas dicta tenetur.
+    - Laborum quia tempora qui neque. Veritatis provident corrupti facilis. Qui laborum mollitia aut illum. Esse et non nemo et aut quo et.
+    - "12"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "28"
+    - Armstrong
+    - (550)447-6279 x307
+    - Dolorem recusandae ducimus ab est tempore ut voluptatum dignissimos.
+    - Aut autem animi quo ab omnis sit. Fugit quos illum distinctio. Eos laudantium rerum ipsam quasi omnis id. Tenetur minima ut pariatur labore corporis vel.
+    - "6"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "29"
+    - Heathcote
+    - 1-725-858-9012
+    - Aut quidem aspernatur adipisci est doloremque accusamus amet esse.
+    - Accusamus voluptatibus possimus similique sapiente ex officiis quas. Deserunt dolorem nisi minima repellendus quas qui aliquid inventore. Architecto natus odit eos laboriosam incidunt. Architecto provident et enim et nostrum ratione consequatur. Ab beatae et fuga officiis ut recusandae rerum.
+    - "18"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "30"
+    - Borer
+    - 1-368-283-1654 x973
+    - Modi et iure dolores atque sed sed aperiam beatae.
+    - Perferendis expedita optio et non quas officiis dolores. Quaerat delectus qui non vero eum. Repudiandae adipisci fugit quaerat. Natus quia nihil et exercitationem ipsum asperiores beatae. Omnis officiis eos inventore magnam nam architecto.
+    - "3"
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+
+--- 
+maintenances: 
+  columns: 
+  - id
+  - equipment_id
+  - client_id
+  - technician_id
+  - service_type
+  - scheduled_date_at
+  - effective_date_at
+  - duration_in_hours
+  - accepted
+  - completed
+  - note
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - "20"
+    - "18"
+    - "5"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:52.953031 Z
+      end: 2010-02-01 14:48:53.133987 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Voluptas consequuntur officia dolore quaerat nulla sit autem. Ad corporis in mollitia consequatur. Error non maiores enim libero corporis tempore placeat quia. Nostrum consectetur natus doloremque non eligendi neque asperiores.
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+  - - "2"
+    - "12"
+    - "14"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Temporibus et ratione quod sit fugit et. Ab adipisci pariatur illum aliquid velit blanditiis doloribus. Nihil similique eaque vel. Cum quo laborum non illum. Reiciendis expedita consequatur beatae tempore.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "3"
+    - "21"
+    - "18"
+    - "9"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.152082 Z
+      end: 2010-02-01 14:48:53.152477 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - In odio nam atque. Non debitis ex sed nobis dignissimos et rerum. Modi quasi dolores unde voluptates illo repellat et distinctio.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "4"
+    - "15"
+    - "21"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Voluptatum soluta aspernatur doloribus provident. Veritatis ratione qui natus voluptatem id dolor autem. Illum et cupiditate repellendus. Ea tenetur perspiciatis in voluptatum exercitationem asperiores dicta. Nisi impedit recusandae et molestias aut.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "5"
+    - "27"
+    - "14"
+    - "6"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.167262 Z
+      end: 2010-02-01 14:48:53.167643 Z
+      excl: false
+
+    - 
+    - "4"
+    - true
+    - true
+    - Voluptas et maiores veniam odit sint error. Modi quaerat cupiditate omnis ut. Excepturi non ducimus facilis error et. Nihil occaecati aliquid rerum. Aliquid architecto ut consequatur corporis quidem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "6"
+    - "9"
+    - "15"
+    - "8"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.176111 Z
+      end: 2010-02-01 14:48:53.176477 Z
+      excl: false
+
+    - 
+    - "1"
+    - true
+    - true
+    - Quia facere iste dicta aperiam ab. Iste optio provident omnis. Sint aut ratione nihil. Facere et illo ea dolor voluptatum labore magnam. Minima ut porro nihil accusamus vel dolorem expedita ut.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "7"
+    - "13"
+    - "16"
+    - "7"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.184961 Z
+      end: 2010-02-01 14:48:53.185319 Z
+      excl: false
+
+    - 
+    - "0.5"
+    - true
+    - true
+    - Et odio explicabo aut excepturi ut facilis voluptatem aperiam. Consequatur reprehenderit modi vitae vel. Sunt omnis est ea distinctio. Quo animi recusandae aut deserunt repellendus officiis dolor. Consectetur commodi placeat libero.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "8"
+    - "13"
+    - "16"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Dolorum libero veritatis nostrum impedit non architecto autem enim. Excepturi officiis et dolorem illum at. Reiciendis modi consequatur tempore nemo. Excepturi exercitationem ad nam. Dolorum sed ut tempore corporis quia eos suscipit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "9"
+    - "1"
+    - "14"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Ducimus voluptates suscipit repellat quas placeat. Corporis et asperiores ullam distinctio et voluptates ex vel. Voluptatem voluptas voluptatem ipsum magnam voluptates recusandae quaerat aut. Laborum non harum rem reiciendis. Similique temporibus commodi nam vel.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "10"
+    - "7"
+    - "17"
+    - "8"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.207530 Z
+      end: 2010-02-01 14:48:53.207906 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Ut in dolor velit. Delectus voluptatem quas soluta. Cumque quia ut vero et.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "11"
+    - "8"
+    - "11"
+    - "4"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.215558 Z
+      end: 2010-02-01 14:48:53.215932 Z
+      excl: false
+
+    - 
+    - "4"
+    - true
+    - true
+    - Est ut omnis eveniet incidunt provident et. Officia dolorum dolorem nostrum perspiciatis. Voluptas libero nihil non natus sint molestiae consectetur. Tempore ut accusantium explicabo alias quidem odio. Sint atque iste sed nesciunt voluptatum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "12"
+    - "26"
+    - "21"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Fugiat voluptatem sit eligendi eveniet. Placeat dolorem aut officiis quod et recusandae enim praesentium. Ad praesentium laboriosam ut.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "13"
+    - "25"
+    - "15"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Praesentium quod alias enim ea. Sit quos cupiditate est odit et corporis assumenda. Quis atque ipsam ipsa fugit modi veniam et. Cupiditate officia similique dolorum iure tempore recusandae corporis. Illum aspernatur explicabo doloremque molestias.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "14"
+    - "4"
+    - "19"
+    - "8"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.237241 Z
+      end: 2010-02-01 14:48:53.237614 Z
+      excl: false
+
+    - 
+    - "2"
+    - true
+    - true
+    - Quod eveniet quis dignissimos expedita. Quia fuga ut est harum iste vel quos modi. Totam eum et quia dolorum adipisci sit. Ut ut et doloremque ut. Praesentium libero soluta error quis.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "15"
+    - "1"
+    - "15"
+    - "7"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.246084 Z
+      end: 2010-02-01 14:48:53.246448 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Tenetur quo eius et aut qui amet quaerat. Sit nisi asperiores qui dolores optio. Illum facilis voluptatem sunt. Dolorem aut nobis commodi eum inventore nisi. Id molestiae laboriosam sapiente est.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "16"
+    - "20"
+    - "20"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Magnam et qui reprehenderit ut nemo dolorem. Iure sit et minima amet blanditiis veniam asperiores dolores. Et voluptatem quasi est hic veniam adipisci sapiente. Necessitatibus voluptate impedit animi.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "17"
+    - "17"
+    - "21"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Id et quisquam et earum consequatur. Et voluptatem et suscipit. Excepturi non aspernatur aliquam. Velit nihil ducimus quia illo.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "18"
+    - "16"
+    - "10"
+    - "7"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.267908 Z
+      end: 2010-02-01 14:48:53.268290 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Aperiam hic a ut et laborum sed reprehenderit dolor. Ullam eius magnam accusamus. Officiis perspiciatis quia quia.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "19"
+    - "30"
+    - "17"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Et quam accusamus repellendus qui pariatur mollitia aut libero. Praesentium pariatur velit perferendis aspernatur voluptas expedita dolor voluptates. Voluptate reprehenderit deserunt nisi illum porro velit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "20"
+    - "26"
+    - "16"
+    - "9"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.282180 Z
+      end: 2010-02-01 14:48:53.282553 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Minus magnam labore impedit. Excepturi ea voluptatem veritatis cupiditate maiores voluptate. Consectetur omnis et sed. Voluptatem non voluptates dicta maxime sunt ratione. Quae eum sit totam.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "21"
+    - "25"
+    - "10"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Modi harum molestias velit officia. Nostrum dicta tempore velit et. Rerum sint exercitationem et iusto. Voluptas laudantium vel assumenda omnis eveniet sed.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "22"
+    - "26"
+    - "14"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - In eaque adipisci quidem accusamus rerum illum odio quia. Ab repellat voluptatem rerum et. Illo est adipisci nulla velit debitis aliquid earum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "23"
+    - "5"
+    - "16"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Quae atque doloremque rerum at blanditiis eius ratione nihil. Ex et deleniti est nam. Mollitia cupiditate in rerum sit et animi quis. Quia omnis non nihil. Consequatur enim id tempore quis.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "24"
+    - "28"
+    - "14"
+    - "6"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.310411 Z
+      end: 2010-02-01 14:48:53.310797 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Et animi quos sunt. Ducimus ut et voluptatem. Est adipisci tempora totam iste sit. Iste beatae omnis voluptates qui.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "25"
+    - "14"
+    - "19"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Dolorem ea autem aut. Sit nulla corporis voluptatem enim aut ea quod. Quis inventore quos et voluptate.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "26"
+    - "19"
+    - "11"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Distinctio nostrum ratione voluptas nobis eos voluptatum. Accusamus odio iste fuga odit ut placeat doloremque. Quae laborum enim aut esse ipsa.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "27"
+    - "17"
+    - "13"
+    - "6"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.331183 Z
+      end: 2010-02-01 14:48:53.331562 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Libero sit unde nobis. Occaecati et unde rem quis. Quia distinctio esse ea aperiam error omnis alias. Dolorem suscipit aut officiis corporis. Molestiae officiis voluptatem et aliquid corrupti unde.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "28"
+    - "7"
+    - "16"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Hic amet rem recusandae sed repellendus sapiente. Fuga ipsa sit occaecati at aliquam consequatur repudiandae beatae. Atque quidem perferendis sint vel corrupti esse asperiores. Ut explicabo voluptas incidunt officiis harum quod id. A sit est cumque debitis voluptatem et.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "29"
+    - "21"
+    - "18"
+    - "8"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.346667 Z
+      end: 2010-02-01 14:48:53.347028 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Velit qui et id sunt. Ipsum earum consequatur et quidem sed. Totam provident iure atque voluptatem voluptatem quo asperiores.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "30"
+    - "25"
+    - "13"
+    - "8"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.354648 Z
+      end: 2010-02-01 14:48:53.354998 Z
+      excl: false
+
+    - 
+    - "3.5"
+    - true
+    - true
+    - Soluta commodi velit sequi. Officia eos ea quia magnam. Et id quia eum dolores rerum officia nemo voluptatem. Laudantium voluptatem harum sed eligendi dignissimos.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "31"
+    - "18"
+    - "16"
+    - "5"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.362895 Z
+      end: 2010-02-01 14:48:53.363237 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Distinctio totam explicabo voluptatem molestiae dicta unde veritatis. Qui rerum sit est tempore officiis quam aperiam ut. Laborum nobis ea sed. Illo dolorum et in ducimus libero ut. Et totam necessitatibus earum iure suscipit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "32"
+    - "22"
+    - "13"
+    - "5"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.371527 Z
+      end: 2010-02-01 14:48:53.371874 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Quis sed ut quasi illum. Placeat repellendus rerum sapiente accusamus rerum a. Asperiores omnis qui occaecati fuga assumenda. Architecto alias rerum consequuntur ipsam.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "33"
+    - "2"
+    - "14"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - At repellendus reiciendis accusamus magnam consectetur eos. Non officia veniam distinctio libero maiores voluptates nihil ut. Omnis non quia maiores ut ipsam est sed quis. Eius necessitatibus harum quo ut eos. Dolores voluptates modi nihil porro magnam dolorem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "34"
+    - "23"
+    - "10"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Aut laudantium dignissimos ut aut. Non dolorem commodi cupiditate atque exercitationem. Dignissimos id hic laborum maxime. Minus perferendis aut sit impedit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "35"
+    - "23"
+    - "20"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Eum excepturi labore eaque fuga maxime magni quidem. In architecto sed velit sint quisquam. Corrupti occaecati laboriosam molestias similique nihil ab tenetur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "36"
+    - "24"
+    - "19"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Sapiente qui tenetur voluptatem itaque nam ea maiores voluptatum. Saepe porro dignissimos rem. Aut eveniet eligendi consectetur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "37"
+    - "14"
+    - "13"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Voluptatem omnis illo qui nam consequuntur. Aut placeat voluptatem id quis molestiae et doloremque ea. Voluptatem architecto consectetur ad.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "38"
+    - "12"
+    - "18"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Rerum adipisci ut unde ipsum quia consequatur et dolorum. Explicabo quia repellat dolorem eveniet. Molestiae saepe voluptatem accusantium ut.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "39"
+    - "9"
+    - "19"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Consectetur ut dolorem dolorem. Recusandae modi est est ut dolorum maiores nihil vero. Excepturi non quia ipsam odit. Aliquid consequatur recusandae provident sed.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "40"
+    - "10"
+    - "16"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Delectus est esse reiciendis sed. Sint perspiciatis harum nihil. Nihil iusto odio nisi est dolores porro non enim. Aut modi consequuntur consequatur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "41"
+    - "25"
+    - "21"
+    - "7"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.430815 Z
+      end: 2010-02-01 14:48:53.431217 Z
+      excl: false
+
+    - 
+    - "3.5"
+    - true
+    - true
+    - Incidunt et error dolorum eligendi rerum ipsam mollitia. Rem voluptatem velit non in et nisi ea. Aut numquam voluptas a eveniet molestiae veritatis harum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "42"
+    - "19"
+    - "12"
+    - "4"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.438925 Z
+      end: 2010-02-01 14:48:53.439276 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Quasi error eos et. Dolorem aut nostrum excepturi similique eius consequuntur nihil. At maxime voluptatem et.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "43"
+    - "30"
+    - "15"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Velit non voluptatum dignissimos aut. Aut optio voluptates quia neque. Dolor voluptatem cumque pariatur sunt sapiente. Quasi non corrupti veritatis tenetur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "44"
+    - "12"
+    - "17"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Molestiae voluptas et dolor et consequatur autem. Quia temporibus reiciendis exercitationem itaque eos et sit. Qui neque odio illum iusto quasi quis accusantium. Doloribus sed voluptas quos eum impedit autem eaque dicta. Tempore quam nam autem officia suscipit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "45"
+    - "10"
+    - "14"
+    - "6"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.524565 Z
+      end: 2010-02-01 14:48:53.524974 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Sed voluptatem voluptas fugiat quas. Minima aut voluptatem blanditiis tenetur odit cumque atque sint. Aliquid sit qui fugiat rerum. Nihil voluptates repudiandae sequi qui ab. Itaque provident voluptatem est quo in quod libero.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "46"
+    - "3"
+    - "20"
+    - "5"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.533542 Z
+      end: 2010-02-01 14:48:53.533914 Z
+      excl: false
+
+    - 
+    - "1"
+    - true
+    - true
+    - Impedit quibusdam magni eum voluptas laborum minima officia id. Ut dolorem ab culpa illo et. Est ea minus provident est dolor modi corporis qui. Accusantium labore deserunt delectus et consectetur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "47"
+    - "8"
+    - "11"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Expedita aut sit repellat hic. Suscipit voluptate libero aliquid reiciendis asperiores. Quia fugiat atque quidem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "48"
+    - "22"
+    - "17"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Vero dolore numquam sit enim. Omnis et aperiam quis necessitatibus quae maiores. Quae rem voluptatum nihil dignissimos autem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "49"
+    - "23"
+    - "11"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Excepturi ab a nihil. Rerum voluptatibus et et eum aut voluptatem. Non perspiciatis ipsum nulla debitis et ut minima omnis. Quasi dolor suscipit assumenda omnis. Accusantium et aperiam doloremque dignissimos quia deleniti.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "50"
+    - "23"
+    - "21"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Dolorem quis quo cupiditate culpa magni. Laborum architecto odit consectetur dolores. At deserunt voluptatem sed id aut. Recusandae sit id laborum. Sapiente ex omnis et qui libero sint temporibus.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "51"
+    - "12"
+    - "15"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Dicta hic quaerat aperiam rem nihil soluta. Accusamus ut ipsum dolor eum ullam vel. Velit maiores magni qui voluptatum. Voluptatem ut quam et.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "52"
+    - "22"
+    - "17"
+    - "9"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.575777 Z
+      end: 2010-02-01 14:48:53.576186 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Possimus quo nostrum non. Natus tempora quis aut et a. Qui quis dolore nemo minima qui repellat. Reiciendis vel quia iure excepturi labore.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "53"
+    - "27"
+    - "15"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Est voluptate nesciunt id accusantium culpa quia. Fuga voluptas incidunt ipsa et. Repellendus mollitia totam atque tenetur ea.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "54"
+    - "26"
+    - "14"
+    - "9"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.590612 Z
+      end: 2010-02-01 14:48:53.590991 Z
+      excl: false
+
+    - 
+    - "0.5"
+    - true
+    - true
+    - Aliquid tempora in quo modi. Porro illum soluta voluptas a maxime et fugit quia. Eos reprehenderit saepe itaque qui earum necessitatibus odit accusantium. Repellat molestiae et officiis.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "55"
+    - "5"
+    - "19"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Quia assumenda a quis recusandae omnis eveniet iusto. Necessitatibus officia voluptatem minus. Iusto est nobis similique. Ut dolor aliquid illum eos voluptatum porro. Et libero aspernatur molestiae nulla aliquid voluptatem corporis.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "56"
+    - "2"
+    - "13"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Quia asperiores aperiam accusantium ab sit. Minima tempora esse ut qui impedit possimus. Ab provident nihil necessitatibus quaerat non cum. Est quia deleniti perferendis molestiae voluptatem placeat repellendus.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "57"
+    - "21"
+    - "13"
+    - "6"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.612507 Z
+      end: 2010-02-01 14:48:53.612893 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Nostrum nobis harum qui est eaque. Ullam perferendis sed optio ducimus sint rerum facere assumenda. Molestiae eum dolor iure illum facilis rerum. Porro est officiis quo eos.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "58"
+    - "13"
+    - "13"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Qui voluptatem rerum ut. Alias perspiciatis voluptatem ut quasi qui temporibus nesciunt est. Autem accusantium ea quo perspiciatis corporis et natus qui. Incidunt non placeat nulla aut. Et natus assumenda esse et vel animi voluptatem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "59"
+    - "7"
+    - "18"
+    - "5"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.627792 Z
+      end: 2010-02-01 14:48:53.628157 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Blanditiis quo sit fuga officiis nesciunt in. Vel eos et ullam. Qui asperiores voluptates dolorem. Accusamus sapiente dolore et enim vero aspernatur. Commodi voluptatem adipisci deserunt.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "60"
+    - "30"
+    - "16"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Iure enim tempore molestiae illum. Culpa quasi eum dolorum et explicabo consequatur excepturi. Aut dolores excepturi dolore voluptas sint. Voluptatem nihil voluptatem placeat accusamus perferendis et nihil dolorem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "61"
+    - "28"
+    - "17"
+    - "6"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.643024 Z
+      end: 2010-02-01 14:48:53.643397 Z
+      excl: false
+
+    - 
+    - "3.5"
+    - true
+    - true
+    - Dolores quos tenetur voluptatum et sed iure. Repellendus quisquam dignissimos saepe est hic rem. Voluptatem ad modi voluptates et ducimus officia ut. Rem sed officia molestiae ex.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "62"
+    - "6"
+    - "11"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Et id provident assumenda est molestiae alias. Veritatis sed rerum illum quos nobis laboriosam. Expedita consequatur assumenda id harum. Voluptatem illum autem quibusdam quaerat et quis recusandae.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "63"
+    - "4"
+    - "16"
+    - "4"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.657837 Z
+      end: 2010-02-01 14:48:53.658240 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Qui blanditiis consequatur laboriosam architecto saepe. Fugit laborum libero in ipsam. Et nemo quasi in tenetur et eos eius expedita. Hic natus ea sed porro et dolores. Facere sint voluptatem aspernatur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "64"
+    - "27"
+    - "10"
+    - "4"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.666549 Z
+      end: 2010-02-01 14:48:53.666901 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Cumque cupiditate mollitia qui molestias aperiam consequatur in nemo. Aut porro perspiciatis perferendis dolorum. Veniam quas illum culpa reiciendis cum voluptas officia. Aperiam sed tempora maxime quos quae in.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "65"
+    - "22"
+    - "16"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Consequuntur repudiandae voluptatem delectus omnis ea sapiente a. Minima rerum in est. Et magni vel eos voluptate velit.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "66"
+    - "21"
+    - "21"
+    - "4"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.681335 Z
+      end: 2010-02-01 14:48:53.681734 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Incidunt et vel saepe maiores nisi eveniet debitis. Enim nisi voluptatem tempora consequatur porro quisquam accusantium. Explicabo repellendus omnis est quia.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "67"
+    - "14"
+    - "16"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Autem assumenda quod modi. Porro harum minima sint. Sunt reiciendis magnam eos commodi labore et quibusdam.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "68"
+    - "21"
+    - "13"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Vel eligendi maxime magni nihil rerum enim. Minima sapiente doloribus libero voluptatibus enim est sed. Dolores eos hic cupiditate enim consequuntur harum. Autem dolor impedit voluptatem. Consectetur harum nihil iusto et velit ea enim.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "69"
+    - "21"
+    - "16"
+    - "4"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.702417 Z
+      end: 2010-02-01 14:48:53.702797 Z
+      excl: false
+
+    - 
+    - "3.5"
+    - true
+    - true
+    - Nostrum soluta harum aliquam. Autem quia temporibus veritatis odit. Qui quia nisi pariatur. Nisi quaerat excepturi harum illo iste ipsa. Praesentium enim a et maxime quia voluptas.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "70"
+    - "10"
+    - "10"
+    - "4"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.711065 Z
+      end: 2010-02-01 14:48:53.711412 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Ea recusandae qui nobis. Alias ut quaerat corrupti et aut esse. Distinctio accusamus id odio.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "71"
+    - "2"
+    - "18"
+    - "6"
+    - occasional
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.719063 Z
+      end: 2010-02-01 14:48:53.719412 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Officiis consectetur praesentium sequi error fuga omnis dolore. Tenetur quibusdam voluptatum et. Harum dolorum quaerat dolores tempore et molestiae magnam. Quia nobis vel voluptatibus cum. Et dicta dignissimos officiis et voluptatem voluptatem dolore.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "72"
+    - "20"
+    - "16"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Sequi dicta esse repellat possimus officiis dolorem magni aliquid. Ea enim perferendis eum nihil dicta. Neque sint odio nihil similique aperiam magnam illum. Iste saepe ipsam excepturi nisi ut. Ea qui et unde cumque.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "73"
+    - "21"
+    - "20"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Sunt sit odit dolorem. Aut ratione qui dolore error. Doloribus odit dolorum explicabo.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "74"
+    - "9"
+    - "14"
+    - "4"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.740709 Z
+      end: 2010-02-01 14:48:53.741084 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Et qui est et et recusandae eveniet. Rerum aliquid et facere. Reprehenderit enim velit ut tempore numquam repellat delectus cumque. Harum cumque et deleniti aspernatur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "75"
+    - "28"
+    - "11"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Veniam reiciendis laudantium pariatur quisquam odio recusandae porro molestiae. Magnam magni fuga adipisci tempore. Dolorum quis tenetur delectus ipsam. Quas fuga repellendus sequi maiores vel aliquid. Optio pariatur atque eaque adipisci aperiam.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "76"
+    - "20"
+    - "15"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Doloribus possimus aspernatur asperiores. Iste rem commodi occaecati accusantium iusto et consequuntur consectetur. Vitae non maxime in debitis laboriosam et neque. Error sapiente a voluptates consequatur non vitae voluptatum adipisci.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "77"
+    - "4"
+    - "16"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - In voluptatem placeat sit sunt laudantium totam recusandae vel. Sed dolores non nemo omnis eum aut. Vel velit eligendi quia autem sed. Cum deserunt reprehenderit culpa corrupti repellat. Harum pariatur ut ullam et et cupiditate nobis officia.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "78"
+    - "9"
+    - "11"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Rerum ipsum rerum facilis delectus et quia optio. Aspernatur culpa esse quo labore. Autem quaerat eos voluptates. Incidunt atque voluptatum enim omnis numquam mollitia et qui.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "79"
+    - "23"
+    - "16"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Modi in architecto quae. Et voluptates at sit ipsa rerum repellendus qui. Tempora ut unde voluptatem velit aliquid. In animi nemo quasi rem voluptatem.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "80"
+    - "4"
+    - "19"
+    - "8"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.782656 Z
+      end: 2010-02-01 14:48:53.783062 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Porro dolore asperiores ut qui maxime. Quaerat quasi occaecati eligendi. Totam placeat ipsum eaque maxime eos eum rerum repellat. Aut accusantium provident deserunt voluptas quia nesciunt porro eligendi.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "81"
+    - "29"
+    - "18"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Voluptates pariatur dolore itaque architecto libero minus. In explicabo velit incidunt sit earum. Temporibus laudantium adipisci delectus.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "82"
+    - "19"
+    - "17"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Voluptatem quidem eos nihil quae veniam qui eveniet tempora. Eos ullam corrupti dicta. Quae id mollitia aliquam praesentium maiores. Quibusdam voluptatem officia voluptatum dicta.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "83"
+    - "16"
+    - "10"
+    - "6"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.803754 Z
+      end: 2010-02-01 14:48:53.804136 Z
+      excl: false
+
+    - 
+    - "4"
+    - true
+    - true
+    - Rem asperiores enim omnis qui est necessitatibus et tempore. Omnis consequatur eos officia voluptatem voluptates architecto. Veritatis sit quis qui iusto voluptate nemo. Impedit cupiditate maxime voluptatem sint. Tempore eligendi laborum nihil eum temporibus aperiam.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "84"
+    - "30"
+    - "11"
+    - "8"
+    - urgent
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.812457 Z
+      end: 2010-02-01 14:48:53.812818 Z
+      excl: false
+
+    - 
+    - "0.5"
+    - true
+    - true
+    - Enim culpa et ut cumque consequuntur vero ea autem. Eaque perferendis qui veniam quam quia. Qui tenetur esse qui animi.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "85"
+    - "30"
+    - "15"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Aut vitae ducimus repellat nulla est doloribus quo et. Reiciendis optio aliquam ipsam consequatur pariatur quia rerum. Cupiditate ducimus iure corrupti.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "86"
+    - "22"
+    - "20"
+    - "9"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.826523 Z
+      end: 2010-02-01 14:48:53.826883 Z
+      excl: false
+
+    - 
+    - 
+    - true
+    - false
+    - Animi quia laboriosam illo nemo tempore rem enim. Praesentium et ea quidem qui dolor incidunt. Similique enim eum corporis velit ipsam eius. Maiores minus officiis reprehenderit hic. Consequuntur quidem dicta et.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "87"
+    - "22"
+    - "16"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Ad cumque qui voluptatem. Saepe maiores est velit ipsam. Ut rerum sit esse placeat facere voluptates quam. Itaque explicabo dolorem eligendi sunt consequatur molestiae commodi. Ut quasi at earum eius et alias consequatur id.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "88"
+    - "21"
+    - "20"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Nam reiciendis dolorum omnis delectus recusandae eius velit qui. Eos molestias dolorem qui sint consequatur eveniet. Et soluta aut sed eos ut vel omnis quo. Ullam harum libero architecto dolor totam ut veniam minima. Voluptatem dolor nesciunt repellat ratione doloremque.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "89"
+    - "29"
+    - "12"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Totam qui doloribus consequatur qui eum officiis placeat velit. Et architecto impedit est dignissimos aut qui dolores. Autem recusandae magni cum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "90"
+    - "2"
+    - "16"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Totam eligendi vero iure iusto ratione. Magni ratione non soluta. Nihil impedit sed labore velit odit beatae cumque.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "91"
+    - "8"
+    - "14"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Commodi dignissimos aut ratione nesciunt quod. Et ex aut minima. Laudantium expedita cupiditate vel repellendus quia veniam nostrum. Sequi quas facilis ut enim et optio esse. Magni quibusdam ducimus tempora impedit harum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "92"
+    - "29"
+    - "15"
+    - "8"
+    - regular
+    - |
+      --- !ruby/range 
+      begin: 2009-09-01 14:48:53.931799 Z
+      end: 2010-02-01 14:48:53.932213 Z
+      excl: false
+
+    - 
+    - "3"
+    - true
+    - true
+    - Sunt quaerat fugiat culpa. Distinctio quia deserunt dolorem et quae. Eum molestiae a animi nisi mollitia.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "93"
+    - "17"
+    - "17"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Iste quaerat temporibus incidunt architecto vitae quas quibusdam magnam. Aut nam reiciendis saepe sint. Amet veniam nesciunt quisquam. Expedita et quidem aliquid veritatis.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "94"
+    - "16"
+    - "14"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Eveniet occaecati velit sint ut praesentium exercitationem adipisci quas. Numquam qui distinctio qui. Ea delectus commodi voluptatem quis earum.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "95"
+    - "16"
+    - "11"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Exercitationem sed harum debitis dolores qui doloribus quo neque. Laborum aliquam aperiam qui minus molestiae tempora autem et. Quis sequi dolores ut blanditiis voluptatem illum. Praesentium magni natus labore tenetur qui expedita ipsam quo.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "96"
+    - "18"
+    - "20"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Laboriosam aperiam et dolorem aut sit consequuntur. Cum eos ipsa id est autem molestiae sapiente velit. Tempora facilis perspiciatis omnis neque. Et sunt accusantium dolorem cumque consequatur libero voluptatem quas. Tempora iusto aut hic.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "97"
+    - "24"
+    - "15"
+    - 
+    - occasional
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Rem veritatis vitae libero sint nobis delectus. Itaque consequuntur veritatis qui ipsam. Aut officiis tempore est dolor eveniet.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "98"
+    - "1"
+    - "10"
+    - 
+    - urgent
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Et eveniet non dolorum quas. Rerum et et nam. Et id velit ipsa placeat. Dolor quo aliquam asperiores.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "99"
+    - "30"
+    - "16"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - false
+    - Similique mollitia magnam nulla alias aperiam quos occaecati numquam. Est repellendus laborum non dolore. Adipisci aut id commodi ea sapiente voluptates voluptatem facilis. Officiis nam adipisci enim qui consectetur.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+  - - "100"
+    - "19"
+    - "12"
+    - 
+    - regular
+    - 
+    - 
+    - 
+    - false
+    - true
+    - Iusto enim facilis est perferendis nostrum consectetur. Quam qui libero optio ut nulla quia cumque dolore. Et illo amet alias. Dolorem incidunt consequatur necessitatibus corrupti perferendis temporibus.
+    - 2009-08-01 16:48:53
+    - 2009-08-01 16:48:53
+
+--- 
+users: 
+  columns: 
+  - id
+  - first_name
+  - role
+  - created_at
+  - updated_at
+  - last_name
+  - phone
+  - address
+  - email
+  records: 
+  - - "1"
+    - Michelangelo
+    - administrator
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Altamore
+    - 879.621.9178 x81769
+    - |-
+      9616 Green Gardens
+      East Jakemouth
+    - m.altamore@kuhn.ca
+  - - "2"
+    - Gladys
+    - secretary
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Stanton
+    - 528.884.1614
+    - |-
+      818 Lockman Junction, 
+      Stephanieburgh
+    - g.stanton@wilderman.uk
+  - - "3"
+    - Elaina
+    - secretary
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Mante
+    - 1-330-409-5608 x7306
+    - |-
+      7275 Skiles Brooks, 
+      Verlaview
+    - e.mante@friesen.info
+  - - "4"
+    - Dax
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Abbott
+    - (855)137-0522
+    - |-
+      68931 Bennie Trace
+      Elenorabury
+    - d.abbott@breitenberg.uk
+  - - "5"
+    - Kenneth
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Dooley
+    - (801)934-0673 x421
+    - |-
+      33603 Arianna Mews
+      North Alfredberg
+    - k.dooley@pfeffer.co.uk
+  - - "6"
+    - Hilda
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Wiza
+    - 325.970.5398 x531
+    - |-
+      048 Ward Run
+      East Othohaven
+    - h.wiza@johnsonhilpert.us
+  - - "7"
+    - Orville
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Grimes
+    - 839.194.0416 x2924
+    - |-
+      212 Jerde Lodge
+      Ezequielfort
+    - o.grimes@oconnell.ca
+  - - "8"
+    - Alisha
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Rau
+    - 522-216-1745 x76812
+    - |-
+      55353 O'Conner Cliff
+      North Deanna
+    - a.rau@king.info
+  - - "9"
+    - Isabella
+    - technician
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Marquardt
+    - 741-291-2500 x25330
+    - |-
+      085 Gibson Roads
+      West Autumn
+    - i.marquardt@fayortiz.biz
+  - - "10"
+    - Brendon
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Kohler
+    - 750.978.1092
+    - |-
+      95994 Lelia Spurs
+      Talonbury
+    - b.kohler@hauck.co.uk
+  - - "11"
+    - Casimir
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Graham
+    - 1-608-705-4042 x82962
+    - |-
+      042 Israel Port
+      Maziestad
+    - c.graham@emmerich.uk
+  - - "12"
+    - Orval
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Orn
+    - 1-743-235-2654 x60084
+    - |-
+      0124 Nolan Station
+      North Leaburgh
+    - o.orn@satterfield.us
+  - - "13"
+    - Theodore
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Klein
+    - 956.725.7531 x3227
+    - |-
+      280 Archibald Run
+      South Luellamouth
+    - t.klein@bernier.com
+  - - "14"
+    - Lysanne
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Hartmann
+    - 331.503.0594 x3348
+    - |-
+      18690 Amina Spurs
+      Lake Heaven
+    - l.hartmann@wolff.name
+  - - "15"
+    - Gerardo
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Rau
+    - 976.294.2094 x6519
+    - |-
+      356 Armstrong Bypass
+      South Diannaborough
+    - g.rau@greenfelder.biz
+  - - "16"
+    - Nella
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Kovacek
+    - 191.969.9830
+    - |-
+      6719 Gottlieb Vista
+      Dickifurt
+    - n.kovacek@gusikowski.uk
+  - - "17"
+    - Antonina
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Cremin
+    - 572-871-4450
+    - |-
+      983 Zaria Street
+      Theodoreton
+    - a.cremin@brown.biz
+  - - "18"
+    - Mae
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Lebsack
+    - 1-005-844-0442 x6839
+    - |-
+      32457 Schaden Shoal
+      Lake Rolando
+    - m.lebsack@heaney.com
+  - - "19"
+    - Kurt
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Smitham
+    - 472.531.2693 x221
+    - |-
+      53334 Friesen Hills
+      North Kamrynbury
+    - k.smitham@oconnell.co.uk
+  - - "20"
+    - Christa
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - Kassulke
+    - 659-413-1297 x560
+    - |-
+      4638 Judy Turnpike
+      Glovershire
+    - c.kassulke@casper.name
+  - - "21"
+    - Elinore
+    - client
+    - 2009-08-01 16:48:52
+    - 2009-08-01 16:48:52
+    - O'Hara
+    - (756)011-9874
+    - |-
+      84071 Felix Prairie
+      Lake Genesis
+    - e.o'hara@considine.uk

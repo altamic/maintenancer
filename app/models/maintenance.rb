@@ -20,35 +20,41 @@ class Maintenance < ActiveRecord::Base
   named_scope :recent,
     lambda { |*args| { :conditions => ["scheduled_date_at < ?", (args.first || 3.months.ago)] } }
                                 
-  named_scope :pending, :conditions => { :accepted => true, :completed => false }                        
+  named_scope :pending, :conditions => { :accepted => true, :completed => false }
   named_scope :refused, :conditions => { :accepted => false, :completed => false }
   named_scope :executed, :conditions => { :accepted => true, :completed => true }
   named_scope :proposed, :conditions => { :accepted => nil }
+  
+  attr_accessor :change_scheduled_date
+  before_save :assign_changed_scheduled_date
   
   def name
     case status
     when "pending"
       return "#{status} maintenance scheduled on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
     when "completed"
-      return "#{status} maintenance on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
-    when "proposed"
-      return "#{status} maintenance for #{equipment_name} of #{client_name}"
-    when "refused"
+      return "maintenance #{status} on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
+    when ("proposed" or "refused")
       return "#{status} maintenance for #{equipment_name} of #{client_name}"
     end
   end
   
   def status
-    if accepted
-      if completed
-        return "completed"
-      else
-        return "pending"
-      end
+    if accepted and completed
+      return "completed"
+    elsif  accepted and not completed
+      return "pending"
     elsif accepted.nil?
       return "proposed"
-    else
+    elsif not accepted 
       return "refused"
     end
   end
+  
+  private
+  
+  def assign_changed_scheduled_date
+    self.scheduled_date_at, self.accepted = @change_scheduled_date, nil unless @change_scheduled_date.nil?
+  end
+  
 end
