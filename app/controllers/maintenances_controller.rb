@@ -1,6 +1,7 @@
 class MaintenancesController < ApplicationController
   def index
-    @maintenances = Maintenance.all(:include => [ :equipment, :client, :technician ]).group_by(&:status)
+    @search = Maintenance.search(params[:search])
+    @maintenances, @maintenances_count = @search.all(:include => [ :equipment, :client, :technician ]), @search.count
   end
   
   def show

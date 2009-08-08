@@ -1,4 +1,5 @@
-Un cliente ha molti impianti di manutenzione
+Insert Searchlogic v2 for the filter on resource
+
 
 Impianto da Manutenzionare in relazione con uno o piu’ Clienti 
 

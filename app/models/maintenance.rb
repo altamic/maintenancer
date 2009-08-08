@@ -9,7 +9,6 @@ class Maintenance < ActiveRecord::Base
   delegate :name, :to => :equipment, :prefix => true
   delegate :name, :to => :client, :prefix => true
   delegate :name, :to => :technician, :prefix => true
-
   
   named_scope :incoming, 
     lambda { |*args| { :conditions => ["scheduled_date_at < ?", (args.first || Time.now)] } }
@@ -18,11 +17,11 @@ class Maintenance < ActiveRecord::Base
     lambda { |*args| { :conditions => ["scheduled_date_at > ?", (args.first || Time.now)] } }
   
   named_scope :recent,
-    lambda { |*args| { :conditions => ["scheduled_date_at < ?", (args.first || 3.months.ago)] } }
-                                
+    lambda { |*args| { :conditions => ["scheduled_date_at > ?", (args.first || 3.months.ago)] } }
+  
   named_scope :pending, :conditions => { :accepted => true, :completed => false }
   named_scope :refused, :conditions => { :accepted => false, :completed => false }
-  named_scope :executed, :conditions => { :accepted => true, :completed => true }
+  named_scope :completed, :conditions => { :accepted => true, :completed => true }
   named_scope :proposed, :conditions => { :accepted => nil }
   
   attr_accessor :change_scheduled_date
@@ -30,14 +29,16 @@ class Maintenance < ActiveRecord::Base
   
   def name
     case status
-    when "pending"
+    when 'pending'
       return "#{status} maintenance scheduled on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
-    when "completed"
+    when 'completed'
       return "maintenance #{status} on #{scheduled_date_at} for #{equipment_name} of #{client_name}"
-    when ("proposed" or "refused")
+    when ('proposed' or 'refused')
       return "#{status} maintenance for #{equipment_name} of #{client_name}"
     end
   end
+  
+  named_scope :status, lambda { |value| self.send(:compute_conditions, value) }
   
   def status
     if accepted and completed
@@ -52,6 +53,9 @@ class Maintenance < ActiveRecord::Base
   end
   
   private
+  def self.compute_conditions(value)
+    self.send(value).proxy_options
+  end
   
   def assign_changed_scheduled_date
     self.scheduled_date_at, self.accepted = @change_scheduled_date, nil unless @change_scheduled_date.nil?
