@@ -6,7 +6,7 @@ class Client < User
   
   # change a scheduled date for an existing maintenance of hers
   delegate :change_scheduled_date, :to => :maintenance 
-  
+
   # request a maintenance for an equipment
   # equipment_id: integer, client_id: integer
   # service_type: string, scheduled_date_at: date

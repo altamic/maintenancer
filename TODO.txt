@@ -1,10 +1,23 @@
-Insert Searchlogic v2 for the filter on resource
+insert will_paginate
 
+maintenances
+
+as a technician I can see a list of maintenances
+and
+for a pending maintenance I can mark as completed
+
+- marca intervento come concluso, inserendo durata e nota
 
 Impianto da Manutenzionare in relazione con uno o piu’ Clienti 
 
-Funzionalita’ Cliente 
-puo’ vedere la lista degli impianti per i quali i usufruisce di 
+As a Client
+I can see the list of serviced equipments
+And
+I can see maintenances ordered from the most recent
+And
+I can see 
+
+puo’ vedere la lista degli impianti per i quali usufruisce di 
 assistenza
 puo’ vedere le proprie manutenzioni  ordinate cronologicamente dal 
 piu’ recente 
