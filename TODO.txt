@@ -1,10 +1,18 @@
-insert will_paginate
+add login/logout
+client, technician, secretary, admin.
+
+
+Stylize application:
+- prettify table
+- alternate rows
+- 
+
 
 maintenances
 
 as a technician I can see a list of maintenances
-and
-for a pending maintenance I can mark as completed
+and for a pending maintenance I can mark as completed
+
 
 - marca intervento come concluso, inserendo durata e nota
 
@@ -15,7 +23,7 @@ I can see the list of serviced equipments
 And
 I can see maintenances ordered from the most recent
 And
-I can see 
+I can see
 
 puo’ vedere la lista degli impianti per i quali usufruisce di 
 assistenza
