@@ -3,6 +3,11 @@
 $(function(){
 	// Datepicker
 	$('.date').datepicker();
+	
+	$('toggle_control').toggle(
+	  function() {$('.toggle').show()},
+	  function() {$('.toggle').hide()}
+	  );
 });
 
 function changeLocation(url){

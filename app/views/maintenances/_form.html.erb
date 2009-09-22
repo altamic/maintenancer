@@ -1,3 +1,6 @@
+<% stylesheet 'theme/ui.all.css' %>
+<% javascript 'jquery.js', 'jquery_ui.js', 'application.js'  %>
+
 <%= error_messages_for :maintenance %>
 <% form_for @maintenance do |f| %>
   <p>
@@ -10,9 +13,8 @@
   </p>
   <p>
     <%= f.label :scheduled_date_at, "Scheduled on" %>
-    <%= f.date_select :scheduled_date_at %>
+    <%= f.text_field :scheduled_date_at, {:class => 'date', :size => '10'} %>
   </p>
-
   <p>
     <%= f.label :accepted %>
     <%= f.radio_button :accepted, false %>No 
@@ -30,7 +32,7 @@
   </p>
   <p>
     <%= f.label :effective_date_at, "Effective on" %>
-    <%= f.date_select :effective_date_at %>
+    <%= f.text_field :effective_date_at, {:class => 'date', :size => '10'} %>
   </p>
   <p>
     <%= f.label :note %><br />

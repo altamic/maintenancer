@@ -1,6 +1,10 @@
 <%= error_messages_for :equipment %>
 <% form_for @equipment, :url => equipments_url do |f| %>
   <p>
+    <%= f.label :created_at, "Created at" %>
+    <%= f.text_field :created_at, {:class  => 'date'} %>
+  </p>
+  <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
