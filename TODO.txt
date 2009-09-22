@@ -1,4 +1,6 @@
-change status to combo box
+
+stylize table
+header smaller
 
 
 Manutenzione Web e' il modo piu' semplice per gestire gli interventi 

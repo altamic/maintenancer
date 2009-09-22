@@ -6,8 +6,8 @@
 <% end %>
 
 <% title "Maintenances (#{@maintenances_count})" %>
-<p>
-  <%= link_to "Add New", new_maintenance_path %>  
+<p class="actions">
+  <%= link_to "Filter Panel" %> | <%= link_to "Add New", new_maintenance_path %>  
 </p>
 
 <% form_for @search do |f| %>
@@ -25,7 +25,7 @@
       <%= f.select :service_type_is, Maintenance::SERVICE_TYPES, { :include_blank => true } %>
       
       &nbsp;&nbsp;&nbsp;
-      <%= f.label :status, 'Status:' %>&nbsp;&nbsp;
+      <%= f.label :status, 'Status:' %>
       <%= f.select :status, Maintenance::STATUSES, { :include_blank => true } %>
       <!-- <%#= f.radio_button :status, 'pending' %> Pending&nbsp;&nbsp;
       <%#= f.radio_button :status, 'proposed'  %> Proposed&nbsp;&nbsp;
@@ -38,54 +38,57 @@
     </p>
     
     <p>
-      <%= f.label :scheduled_date_at_after, "Scheduled between:" %>
+      <%= f.label :scheduled_date_at_after, "Scheduled between" %>
       <%= f.text_field :scheduled_date_at_after, :size => 10, :class => 'date' %>
       
-      <%= f.label :scheduled_date_at_before, "and:" %>
+      <%= f.label :scheduled_date_at_before, "and" %>
       <%= f.text_field :scheduled_date_at_before, :size => 10, :class => 'date' %>
       &nbsp;&nbsp;&nbsp;&nbsp;
       
       <%= f.label :client_id_is, 'Client:' %>
       <%= f.collection_select :client_id_is, Client.all, :id, :name, { :include_blank => true } %>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
       <%= f.label :note_contains, 'Note:' %>
-      <%= f.text_field :note_contains, :size => 15 %>
+      <%= f.text_field :note_contains, :size => 16 %>
     </p>
     
-    <p>
-
-
       <%= f.submit 'Filter', :class => 'right' %>
-    </p>
+      |
+      <%= link_to 'Reset' %>
 
   </fieldset>
+  
 <% end %>
 
-<table border="1" cellpadding="0">
-    <tr>
-      <th><%= order @search, :by => :id, :as => "ID" %></th>
-      <th><%= order @search, :by => :scheduled_date_at, :as => "Scheduled Date" %></th>
-      <th><%= order @search, :by => :equipment_id, :as => "Equipment" %></th>
-      <th><%= order @search, :by => :client_id, :as => "Client" %></th>
-      <th><%= order @search, :by => :technician_id, :as => "Technician" %></th>    
-      <th>Status</th>
-      <th>Service Type</th>
-    </tr>
-  <% for maintenance in @maintenances %>
-    <tr>
-      <td><%=h maintenance.id %></td>      
-      <td><%=h maintenance.scheduled_date_at %></td>
-      <td><%=h maintenance.equipment_name %></td>
-      <td><%=h maintenance.client_name %></td>
-      <td><%=h maintenance.technician_name unless maintenance.technician_id.nil? %></td>      
-      <td><%=h maintenance.status %></td>      
-      <td><%=h maintenance.service_type %></td>      
-      <td><%= link_to "Show", maintenance %></td>
-    </tr>
-  <% end %>
-</table>
-<p>
-  <%= will_paginate @maintenances %>
-</p>
+<% if @maintenances_count.zero? %>
+  <p class="big center">There is no result matching the current search criteria.</p>
+<% else %>
+  <table>
+      <tr>
+        <th><%= order @search, :by => :id, :as => "ID" %></th>
+        <th><%= order @search, :by => :scheduled_date_at, :as => "Scheduled Date" %></th>
+        <th><%= order @search, :by => :equipment_id, :as => "Equipment" %></th>
+        <th><%= order @search, :by => :client_id, :as => "Client" %></th>
+        <th><%= order @search, :by => :technician_id, :as => "Technician" %></th>    
+        <th>Service Type</th>
+        <th>Status</th>      
+      </tr>
+    <% for maintenance in @maintenances %>
+      <tr class="<%= cycle(:odd, :even) %>" onclick="changeLocation('<%= url_for(maintenance) %>');">
+        <td><%= link_to maintenance.id, maintenance, {:title => 'Show details'} %></td>      
+        <td><%=h maintenance.scheduled_date_at %></td>
+        <td><%=h maintenance.equipment_name %></td>
+        <td><%=h maintenance.client_name %></td>
+        <td><%=h maintenance.technician_name unless maintenance.technician_id.nil? %></td>      
+        <td><%=h maintenance.service_type %></td>      
+        <td><%=h maintenance.status %></td>      
+      </tr>
+    <% end %>
+  </table>
+  <p>
+    <%= will_paginate @maintenances %>
+  </p>
+<% end %>
+
 
 
