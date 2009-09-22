@@ -1,3 +1,50 @@
+Manutenzione Web e' il modo piu' semplice per gestire gli interventi 
+di manutenzione agli impianti della tua azienda.
+
+Ogni utente e' geolocalizzato 
+
+domande risposte
+
+
+
+crea un account, inserisci i tuoi impianti 
+vedi i forniri di servizi nelle vicinanze
+e invita
+i tuoi fornitori di servizi di manutenzione ad iscriversi.
+
+non appena lo faranno potrannno gestire e visualizzare lo stato 
+dei tuoi impianti online 
+
+manutenzione in arrivo,
+
+
+nuovi fornitori impianti in un raggio di x km
+
+ruoli
+
+registrati come azienda che usufruisce di assistenza
+registrati come azienda fornitrice di assistenza
+registrati come azienda inserzionista di pubblicita'
+registrati come 
+
+
+200 euro mensili
+
+database italiano
+
+
+citta'
+quartiere
+regione 
+cap
+
+database apparecchiature
+
+tipo:     caldaia
+marca:    
+modello:     
+
+
 add login/logout
 client, technician, secretary, admin.
 
@@ -6,12 +53,10 @@ Stylize application:
 - alternate rows
 
 
-
 maintenances
 
 as a technician I can see a list of maintenances
 and for a pending maintenance I can mark as completed
-
 
 - marca intervento come concluso, inserendo durata e nota
 

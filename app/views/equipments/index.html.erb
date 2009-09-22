@@ -8,7 +8,7 @@
     <th>Note</th>
     <th>Maintenance Periodicity In Months</th>
   </tr>
-  <% for equipment in @equipment %>
+  <% for equipment in @equipments %>
     <tr>
       <td><%=h equipment.name %></td>
       <td><%=h equipment.code %></td>
@@ -21,5 +21,8 @@
     </tr>
   <% end %>
 </table>
+<p>
+  <%= will_paginate @equipments %>
+</p>
 
 <p><%= link_to "New Equipment", new_equipment_path %></p>

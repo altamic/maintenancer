@@ -1,6 +1,7 @@
 class EquipmentsController < ApplicationController
   def index
-    @equipment = Equipment.find(:all)
+    @search = Equipment.search(params[:search])
+    @equipments, @equipments_count = @search.all.paginate(:per_page => 5, :page => params[:page]), @search.count
   end
   
   def show

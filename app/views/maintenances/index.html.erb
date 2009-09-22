@@ -17,10 +17,14 @@
     </legend>
 
     <p>
+      <%= f.label :equipment_id_is, 'Equipment:' %>
+      <%= f.collection_select :equipment_id_is, Equipment.all, :id, :name, { :include_blank => true } %>
+      &nbsp;&nbsp;&nbsp;
+      
       <%= f.label :service_type_is,  'Type:' %>&nbsp;
       <%= f.select :service_type_is, Maintenance::SERVICE_TYPES, { :include_blank => true } %>
       
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;
       <%= f.label :status, 'Status:' %>&nbsp;&nbsp;
       <%= f.radio_button :status, 'pending' %> Pending&nbsp;&nbsp;
       <%= f.radio_button :status, 'proposed'  %> Proposed&nbsp;&nbsp;
@@ -36,27 +40,24 @@
       <%= f.text_field :scheduled_date_at_before, :size => 10, :class => 'date' %>
       &nbsp;&nbsp;&nbsp;&nbsp;
       
-      <%= f.label :note_contains, 'Note contains:' %>
-      <%= f.text_field :note_contains, :size => 20 %>
-    </p>
-    
-    <p>
-      <%= f.label :equipment_id_is, 'Equipment:' %>
-      <%= f.collection_select :equipment_id_is, Equipment.all, :id, :name, { :include_blank => true } %>
-      &nbsp;&nbsp;&nbsp;
-      
       <%= f.label :client_id_is, 'Client:' %>
       <%= f.collection_select :client_id_is, Client.all, :id, :name, { :include_blank => true } %>
       &nbsp;&nbsp;&nbsp;
       <%= f.label :technician_id_is, 'Technician:' %>
       <%= f.collection_select :technician_id_is, Technician.all, :id, :name, { :include_blank => true } %>
+
+    </p>
+    
+    <p>
+      <%= f.label :note_contains, 'Note:' %>
+      <%= f.text_field :note_contains, :size => 10 %>
+
+      <%= f.submit 'Filter', :class => 'right' %>
     </p>
 
   </fieldset>
-  <p class="button"><%= f.submit 'Filter' %></p>
 <% end %>
 
-<p><%= will_paginate @maintenances %></p>
 <table border="1" cellpadding="0">
     <tr>
       <th><%= order @search, :by => :id, :as => "ID" %></th>
