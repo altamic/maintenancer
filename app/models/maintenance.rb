@@ -1,5 +1,5 @@
 class Maintenance < ActiveRecord::Base
-  STATUSES = %w(accepted refused pending complete)
+  STATUSES = %w(pending completed proposed refused)
   SERVICE_TYPES = %w(regular occasional urgent)
   
   belongs_to :equipment
@@ -10,12 +10,12 @@ class Maintenance < ActiveRecord::Base
   delegate :name, :to => :client, :prefix => true
   delegate :name, :to => :technician, :prefix => true
   
+  validates_presence_of :equipment
+  
   named_scope :incoming, 
     lambda { |*args| { :conditions => ["scheduled_date_at < ?", (args.first || Time.now)] } }
-  
   named_scope :late, 
     lambda { |*args| { :conditions => ["scheduled_date_at > ?", (args.first || Time.now)] } }
-  
   named_scope :recent,
     lambda { |*args| { :conditions => ["scheduled_date_at > ?", (args.first || 3.months.ago)] } }
   
@@ -58,7 +58,7 @@ class Maintenance < ActiveRecord::Base
   end
   
   def assign_changed_scheduled_date
-    self.scheduled_date_at, self.accepted = @change_scheduled_date, nil unless @change_scheduled_date.nil?
+    (self.scheduled_date_at, self.accepted = @change_scheduled_date, nil) unless @change_scheduled_date.nil?
   end
   
 end

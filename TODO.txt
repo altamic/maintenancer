@@ -1,3 +1,6 @@
+change status to combo box
+
+
 Manutenzione Web e' il modo piu' semplice per gestire gli interventi 
 di manutenzione agli impianti della tua azienda.
 
@@ -27,7 +30,6 @@ registrati come azienda fornitrice di assistenza
 registrati come azienda inserzionista di pubblicita'
 registrati come 
 
-
 200 euro mensili
 
 database italiano
@@ -39,6 +41,11 @@ regione
 cap
 
 database apparecchiature
+listino apparecchiature esistenti
+marche,
+caldaia, 
+impianto di climatizzazzione,
+
 
 tipo:     caldaia
 marca:    

@@ -26,10 +26,15 @@
       
       &nbsp;&nbsp;&nbsp;
       <%= f.label :status, 'Status:' %>&nbsp;&nbsp;
-      <%= f.radio_button :status, 'pending' %> Pending&nbsp;&nbsp;
-      <%= f.radio_button :status, 'proposed'  %> Proposed&nbsp;&nbsp;
-      <%= f.radio_button :status, 'completed'  %> Completed&nbsp;&nbsp;
-      <%= f.radio_button :status, 'refused' %> Refused&nbsp;&nbsp;
+      <%= f.select :status, Maintenance::STATUSES, { :include_blank => true } %>
+      <!-- <%#= f.radio_button :status, 'pending' %> Pending&nbsp;&nbsp;
+      <%#= f.radio_button :status, 'proposed'  %> Proposed&nbsp;&nbsp;
+      <%#= f.radio_button :status, 'completed'  %> Completed&nbsp;&nbsp;
+      <%#= f.radio_button :status, 'refused' %> Refused&nbsp;&nbsp; -->
+      &nbsp;&nbsp;&nbsp;
+      <%= f.label :technician_id_is, 'Technician:' %>
+      <%= f.collection_select :technician_id_is, Technician.all, :id, :name, { :include_blank => true } %>
+      
     </p>
     
     <p>
@@ -42,15 +47,13 @@
       
       <%= f.label :client_id_is, 'Client:' %>
       <%= f.collection_select :client_id_is, Client.all, :id, :name, { :include_blank => true } %>
-      &nbsp;&nbsp;&nbsp;
-      <%= f.label :technician_id_is, 'Technician:' %>
-      <%= f.collection_select :technician_id_is, Technician.all, :id, :name, { :include_blank => true } %>
-
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= f.label :note_contains, 'Note:' %>
+      <%= f.text_field :note_contains, :size => 15 %>
     </p>
     
     <p>
-      <%= f.label :note_contains, 'Note:' %>
-      <%= f.text_field :note_contains, :size => 10 %>
+
 
       <%= f.submit 'Filter', :class => 'right' %>
     </p>
