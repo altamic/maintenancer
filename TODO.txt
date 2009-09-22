@@ -1,11 +1,10 @@
 add login/logout
 client, technician, secretary, admin.
 
-
 Stylize application:
 - prettify table
 - alternate rows
-- 
+
 
 
 maintenances
