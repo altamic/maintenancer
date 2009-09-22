@@ -7,15 +7,11 @@
 
 <% title "Maintenances (#{@maintenances_count})" %>
 <p class="actions">
-  <%= link_to "Filter Panel", "javascript:;", {:class  => 'toggle_control'} %> | <%= link_to "Add New", new_maintenance_path %>  
+  <a id="filter_panel_link">Search Criteria</a> | <%= link_to "Add New", new_maintenance_path %>  
 </p>
 
 <% form_for @search do |f| %>
   <fieldset class="toggle">
-    <legend>
-      Search Criteria
-    </legend>
-
     <p>
       <%= f.label :equipment_id_is, 'Equipment:' %>
       <%= f.collection_select :equipment_id_is, Equipment.all, :id, :name, { :include_blank => true } %>
@@ -27,10 +23,7 @@
       &nbsp;&nbsp;&nbsp;
       <%= f.label :status, 'Status:' %>
       <%= f.select :status, Maintenance::STATUSES, { :include_blank => true } %>
-      <!-- <%#= f.radio_button :status, 'pending' %> Pending&nbsp;&nbsp;
-      <%#= f.radio_button :status, 'proposed'  %> Proposed&nbsp;&nbsp;
-      <%#= f.radio_button :status, 'completed'  %> Completed&nbsp;&nbsp;
-      <%#= f.radio_button :status, 'refused' %> Refused&nbsp;&nbsp; -->
+
       &nbsp;&nbsp;&nbsp;
       <%= f.label :technician_id_is, 'Technician:' %>
       <%= f.collection_select :technician_id_is, Technician.all, :id, :name, { :include_blank => true } %>
