@@ -15,10 +15,12 @@
     	  <a href="/">Manutenzione<span class="white">Web</span></a>
     	  <p>Interventi di manutenzione a portata di click</p>
     	</div>
-      <div id="user_nav">
-        <%= link_to 'Register', new_user_path %> 
-        or <%= link_to "Login", login_path %>
-      </div>
+    	
+    	<%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+      
+      <%=  render :partial => 'shared/user_nav' %>
       <div id="menu">
       	<ul>
       	  <li><%= link_to "Cosa &egrave;" %></li>
@@ -34,9 +36,6 @@
     <!-- main -->
     <div id="main">
         <div id="content">
-        <%- flash.each do |name, msg| -%>
-          <%= content_tag :div, msg, :id => "flash_#{name}" %>
-        <%- end -%>
         <div id="text">
           <%- if show_title? -%>
             <h1><%=h yield(:title) %></h1>

@@ -1,8 +1,8 @@
 class Client < User
-  has_many :maintenances
-  has_one :equipment, :through => :maintenances
-  
   default_scope :conditions => {:role  => 'client'}
+  
+  has_many :maintenances
+  has_many :equipments, :through => :maintenances
   
   # change a scheduled date for an existing maintenance of hers
   delegate :change_scheduled_date, :to => :maintenance 

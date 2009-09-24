@@ -1,4 +1,6 @@
 class MaintenancesController < ApplicationController
+  before_filter :authorize
+  
   def index
     @search = Maintenance.search(params[:search])
     @maintenances, @maintenances_count = @search.all(:include => [ :equipment, :client, :technician ]).paginate(:per_page => 15, :page => params[:page]), @search.count

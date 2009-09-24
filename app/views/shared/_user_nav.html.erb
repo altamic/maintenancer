@@ -1,0 +1,15 @@
+<div id="user_nav">
+  <% if current_user %>
+  <p>
+    Welcome <%= current_user.name.split(' ').first %>!
+    <br/>
+    <%= link_to "Profile", edit_user_path(current_user) %> |
+    <%= link_to "Logout", logout_path %>
+  </p>  
+  <% else %>
+  <p>
+    <%= link_to "Login", login_path %> or
+    <%= link_to "Register", new_user_path %>
+  </p>  
+  <% end %>
+</div>

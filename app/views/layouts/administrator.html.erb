@@ -1,27 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application' %>
-    
-    <%= yield(:head) %>
-  </head>
-  <body>
-    <div id="container">
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Manutenzione Web &mdash; <%= h(yield(:title) || "Untitled") %></title>
+<%= stylesheet_link_tag 'application' %>
+
+<%= yield(:head) %>
+</head>
+<body>
+ <div id="container">
+	<!-- header -->
+    <div id="header">
+    	<div id="logo">
+    	  <a href="/">Manutenzione<span class="white">Web</span></a>
+    	  <p>Interventi di manutenzione a portata di click</p>
+    	</div>
+
+    	<%- flash.each do |name, msg| -%>
+        <%= content_tag :div, (content_tag :p, msg), :id => "flash_#{name}" %>
       <%- end -%>
-      
-      <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
-      <%- end -%>
-      
-      <%= yield %>
-      
-      <p></p>
-      <p></p>
-      <p></p>      
+
+      <%=  render :partial => 'shared/user_nav' %>
+
+      <div id="menu">
+      	<ul>
+      	  <li><%= link_to "Cosa &egrave;" %></li>
+          <li><%= link_to "Manutenzioni", maintenances_path %></li>
+          <li><%= link_to "Impianti", equipments_path %></li>
+          <li><%= link_to "Utenti", users_path %></li>
+          <li><%= link_to "Domande" %></li>
+          <li><%= link_to "Contattaci"%></li>
+          </ul>
+      </div>
     </div>
-  </body>
+    <!--end header -->
+    <!-- main -->
+    <div id="main">
+        <div id="content">
+        <div id="text">
+          <%- if show_title? -%>
+            <h1><%=h yield(:title) %></h1>
+          <%- end -%>
+
+          <%= yield %>       
+          </div>
+       </div>
+    </div>
+    <!-- end main -->
+    <!-- footer -->
+    <div id="footer">
+      <div id="left_footer">&copy; Copyright 2009 Convergent.it</div>
+      <div id="right_footer">
+        <!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+        <a href="http://www.realitysoftware.ca/services/website-development/design/">Web design</a> released by <a href="http://www.flash-gallery.org/">Flash Gallery</a>
+      </div>
+    </div>
+    <!-- end footer -->
+  </div>
+</body>
 </html>

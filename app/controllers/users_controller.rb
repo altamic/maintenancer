@@ -46,8 +46,8 @@ class UsersController < ApplicationController
   
   private
   def for_user
-    if @user && @user.role
-      @user.role
+    if current_user && current_user.role
+      current_user.role
     else
       "application"
     end
