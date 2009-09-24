@@ -1,7 +1,10 @@
 class Technician < User
   default_scope :conditions => {:role  => 'technician'}
+  has_many :maintenances
+  attr_protected :role
   
-  # mark maintenance as completed
+  has_many :maintenances
+  has_many :equipments, :through => :maintenances
   
   # TODO: memoize serviced_equipments
   def serviced_equipments

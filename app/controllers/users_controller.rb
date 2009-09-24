@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
-  layout  :for_user
   
   def index
     @users = User.find(:all)
   end
   
   def show
-    @user = class_by_user_role(User.find(params[:id]))
+    @user = user_role(User.find(params[:id]))
   end
   
   def new
@@ -44,12 +43,4 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
   
-  private
-  def for_user
-    if current_user && current_user.role
-      current_user.role
-    else
-      "application"
-    end
-  end
 end

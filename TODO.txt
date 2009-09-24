@@ -1,3 +1,13 @@
+fix show manteinance for technician
+
+create automatic password
+
+self referential association
+
+put name of the user in the session
+
+change email confirmation
+
 move secretary to service_provider
 
 stylize table
@@ -5,7 +15,7 @@ header smaller
 
 
 Manutenzione Web e' il modo piu' semplice per gestire gli interventi 
-di manutenzione agli impianti della tua azienda.
+di manutenzione degli impianti della tua azienda.
 
 Ogni utente e' geolocalizzato 
 

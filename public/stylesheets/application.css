@@ -200,13 +200,13 @@ line-height: 12px;
 padding-top: 15px;
 }
 #content {
-background: white;
+background: #f3f3f3;
 margin: 0 auto;
 padding: 0;
 width: 958px;
 height:inherit;
 border: 1px solid black;
-min-height: 420px;
+min-height: 480px;
 }
 #text {
 
@@ -245,13 +245,12 @@ text-transform: uppercase;
 background: url('images/footer_bckg.gif') repeat-x #3f3e3e 0 2px;
 height: 94px;
 width:960px;
-margin:auto;
-margin-top: 20px;
+margin:0 auto;
 clear: both;
 }
 #left_footer {
 width: 480px;
-padding: 40px 0 0 30px;
+padding: 0px 0 0 30px;
 display:inline;
 color: #FFFFFF;
 font-weight: bold;
@@ -266,7 +265,7 @@ text-decoration: none;
 #right_footer {
 width: 480px;
 text-align: right;
-padding: 40px 30px 0 0;
+padding: 0px 30px 0 0;
 color: #FFFFFF;
 font-weight: bold;
 font-size: 11px;
@@ -351,20 +350,27 @@ color: #AAA;
 CCborderRadius: 5px;
 }
 .pagination span.current {
+border: 1px solid #DDDDDD;
 font-weight: bold;
 background: #fe5800;
 color: white;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 CCborderRadius: 5px;
+-moz-box-shadow: 1px 1px 5px #fe5800;
+-webkit-box-shadow: 1px 1px 5px #fe5800;
+box-shadow: 1px 3px 20px #fe5800;
 }
 .pagination a {
 border: 1px solid #DDDDDD;
-color: #fe5800;
+color: black;
 text-decoration: none;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 CCborderRadius: 5px;
+-moz-box-shadow: 1px 1px 5px #111;
+-webkit-box-shadow: 1px 1px 5px #111;
+box-shadow: 1px 3px 20px #111;
 }
 .pagination a:hover,.pagination a:focus {
 opacity: 0.5;

@@ -1,4 +1,24 @@
 <% title "Users" %>
+<% administrator_area current_user do %>  
+  <p><%= link_to "Create New User", new_user_path %></p>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+    </tr>
+    <% for user in @users %>
+      <tr>
+        <td><%=h user.name %></td>
+        <td><%=h user.role %></td>
+        <td><%= link_to "Show", user %></td>
+        <td><%= link_to "Edit", edit_user_path(user) %></td>
+        <td><%= link_to "Destroy", user, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
 <p>
   administrator can see any user
   secretary can see any technician and any client
@@ -6,18 +26,4 @@
   client is not allowed
   
 </p>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Role</th>
-  </tr>
-  <% for user in @users %>
-    <tr>
-      <td><%=h user.name %></td>
-      <td><%=h user.role %></td>
-      <td><%= link_to "Show", user %></td>
-      <td><%= link_to "Edit", edit_user_path(user) %></td>
-      <td><%= link_to "Destroy", user, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+

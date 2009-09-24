@@ -4,11 +4,11 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-  
+  layout  :by_role
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  helper_method :current_user, :class_by_user_role
+  helper_method :current_user, :user_role, :current_user_role
   
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
@@ -17,7 +17,11 @@ class ApplicationController < ActionController::Base
   
   def current_user
     return @current_user if defined?(@current_user)
-    @current_user = current_user_session && class_by_user_role(current_user_session.record)
+    @current_user = (current_user_session && current_user_session.record)
+  end
+  
+  def current_user_role
+    user_role(current_user) if not current_user.nil?
   end
   
   def authorize
@@ -28,8 +32,16 @@ class ApplicationController < ActionController::Base
     end
   end
   
-  def class_by_user_role(user)
-    user.role.classify.constantize.find(user) || user
+  def by_role
+    if current_user && current_user.role
+      current_user.role
+    else
+      "application"
+    end
+  end
+  
+  def user_role(user)
+    !user.nil? && user.role.classify.constantize.find(user)
   end
   
   User::ROLES.each do |role|

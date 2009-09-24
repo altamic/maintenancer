@@ -4,6 +4,8 @@ class Client < User
   has_many :maintenances
   has_many :equipments, :through => :maintenances
   
+  attr_protected :role
+  
   # change a scheduled date for an existing maintenance of hers
   delegate :change_scheduled_date, :to => :maintenance 
 
