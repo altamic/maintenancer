@@ -1,19 +1,19 @@
 class EquipmentsController < ApplicationController
   def index
-    @search = Equipment.search(params[:search])
+    @search = current_user_role.equipments.search(params[:search])
     @equipments, @equipments_count = @search.all.paginate(:per_page => 5, :page => params[:page]), @search.count
   end
   
   def show
-    @equipment = Equipment.find(params[:id])
+    @equipment = current_user_role.equipments.find(params[:id])
   end
   
   def new
-    @equipment = Equipment.new
+    @equipment = current_user_role.equipments.build
   end
   
   def create
-    @equipment = Equipment.new(params[:equipment])
+    @equipment = current_user_role.equipments.build(params[:equipment])
     if @equipment.save
       flash[:notice] = "Successfully created equipment."
       redirect_to @equipment
@@ -23,11 +23,11 @@ class EquipmentsController < ApplicationController
   end
   
   def edit
-    @equipment = Equipment.find(params[:id])
+    @equipment = current_user_role.equipments.find(params[:id])
   end
   
   def update
-    @equipment = Equipment.find(params[:id])
+    @equipment = current_user_role.equipments.find(params[:id])
     if @equipment.update_attributes(params[:equipment])
       flash[:notice] = "Successfully updated equipment."
       redirect_to @equipment
@@ -37,9 +37,15 @@ class EquipmentsController < ApplicationController
   end
   
   def destroy
-    @equipment = Equipment.find(params[:id])
-    @equipment.destroy
-    flash[:notice] = "Successfully destroyed equipment."
-    redirect_to equipments_url
+    if current_user_role.has_role? Administrator
+      @equipment = current_user_role.equipments.find(params[:id])
+      @equipment.destroy
+      flash[:notice] = "Successfully destroyed equipment."
+      redirect_to equipments_url
+    else
+      flash[:error] = "Unauthorized action."
+      redirect_to equipments_url
+    end
+
   end
 end
