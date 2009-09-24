@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   ROLES = %w(administrator secretary technician client)
+  validates_presence_of :role
+  
+   :role
   
   acts_as_authentic
 

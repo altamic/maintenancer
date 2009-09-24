@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  helper_method :current_user
+  helper_method :current_user, :class_by_user_role
   
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   
   def current_user
     return @current_user if defined?(@current_user)
-    @current_user = current_user_session && current_user_session.record
+    @current_user = current_user_session && class_by_user_role(current_user_session.record)
   end
   
   def authorize
@@ -26,6 +26,10 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
       false
     end
+  end
+  
+  def class_by_user_role(user)
+    user.role.classify.constantize.find(user) || user
   end
   
   User::ROLES.each do |role|

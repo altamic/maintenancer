@@ -42,10 +42,9 @@
   <b>Email</b>: <%= @user.email %> <br /> <br />
   <b>Address</b>: <%= simple_format @user.address %>
   
-  <% @client = classify_from_role(@user) %>
-  <% if !@client.equipment.blank? %>
+  <% if !@user.equipments.blank? %>
     <h2>Equipments</h2>
-    <% for equipment in [@client.equipment] %>
+    <% for equipment in [@user.equipments] %>
           <h3><%= equipment.name %></h3>
           <% if !equipment.maintenances.incoming.pending.blank? %>
             <h3>Pending Maintenances</h3>

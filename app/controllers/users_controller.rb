@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(params[:id])
+    @user = class_by_user_role(User.find(params[:id]))
   end
   
   def new

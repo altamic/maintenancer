@@ -22,14 +22,17 @@ color: #fe5800;
 .white {
 color: #FFFFFF;
 }
+
+.rotate {
+
+}
+
 .clear {
 clear: both;
 height: 0px;
 overflow: hidden;
 }
-#container {
-  background: #DDD url('images/bg.png') top center repeat-x;
-}
+
 .fieldWithErrors {
 display: inline;
 }
@@ -63,6 +66,7 @@ font-size: 12px;
 list-style: disc;
 }
 #container {
+  background: #DDD url('images/bg.png') top center repeat-x;
 }
 #header {
 width: 960px;
@@ -99,6 +103,7 @@ color: white;
 margin-top: -1px;
 padding-bottom: 0px;
 font-size: 11px;
+
 }
 #flash_notice,#flash_error {
 display: right;
@@ -121,7 +126,7 @@ font-size: 12px;
 color: white;
 float: right;
 width: 180px;
-margin-top: -75px;
+margin-top: -55px;
 }
 #user_nav p {
 text-align: center;
@@ -198,18 +203,23 @@ padding-top: 15px;
 background: white;
 margin: 0 auto;
 padding: 0;
-width: 960px;
+width: 958px;
+height:inherit;
+border: 1px solid black;
+min-height: 420px;
 }
 #text {
-margin: 20px 0 20px 0;
+
+margin: 20px 40px 20px 0;
 float: left;
 width: 800px;
-min-height: 420px;
-padding-left: 20px;
+
+padding-left: 50px;
 }
 #text h1 {
 font-size: 20px;
-color: #000;
+color: #2c2c2c;
+text-shadow: 0px -1px 0px #e0e0e0;
 font-weight: normal;
 display: inline;
 }
@@ -234,12 +244,15 @@ text-transform: uppercase;
 #footer {
 background: url('images/footer_bckg.gif') repeat-x #3f3e3e 0 2px;
 height: 94px;
+width:960px;
+margin:auto;
 margin-top: 20px;
 clear: both;
 }
 #left_footer {
-float: left;
+width: 480px;
 padding: 40px 0 0 30px;
+display:inline;
 color: #FFFFFF;
 font-weight: bold;
 font-size: 11px;
@@ -251,16 +264,19 @@ color: #FFFFFF;
 text-decoration: none;
 }
 #right_footer {
-float: right;
+width: 480px;
+text-align: right;
 padding: 40px 30px 0 0;
 color: #FFFFFF;
 font-weight: bold;
 font-size: 11px;
-text-align: right;
+float:right;
 }
 #right_footer a {
 color: #FFFFFF;
+text-align: right;
 }
+
 #right_footer a:hover {
 text-decoration: none;
 }
@@ -268,6 +284,11 @@ fieldset {
 margin: 12px 0px;
 background-color: #f5f5f5;
 border: 1px solid #424242;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 1px 3px 10px #111;
+-webkit-box-shadow: 1px 3px 10px #111;
+box-shadow: 1px 3px 10px #111;
 }
 table {
 font-family: 'Arial Narrow',Arial,sans-serif;
@@ -277,6 +298,9 @@ border: 1px solid gray;
 margin-top: 20px;
 margin-bottom: 10px;
 width: 100%;
+-moz-box-shadow: 1px 3px 20px #111;
+-webkit-box-shadow: 1px 3px 20px #111;
+box-shadow: 1px 3px 20px #111;
 }
 table th {
 background: #434343 url('images/th.png') top repeat-x;
