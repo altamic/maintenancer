@@ -1,4 +1,5 @@
 <% title @maintenance.name %>
+<%= link_to "View all", maintenances_path %>
 
 <p>
   <strong>Service Type:</strong>
@@ -9,7 +10,7 @@
   <%=h @maintenance.technician_name unless @maintenance.technician_id.nil? %>
 </p>
 
-<% if @maintenance.status == '' %>
+<% if @maintenance.status.blank? %>
 <p>
   <strong>Scheduled Date At:</strong>
   <%=h @maintenance.scheduled_date_at %>
@@ -30,7 +31,7 @@
   <%=h @maintenance.accepted %>
 </p>
 
-<% if @maintenance.status == '' %>
+<% if @maintenance.status.blank? %>
 <p>
   <strong>Completed:</strong>
   <%=h @maintenance.completed %>

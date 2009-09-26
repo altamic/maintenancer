@@ -1,5 +1,7 @@
 <% title "Equipments" %>
 
+<p><%= link_to "New Equipment", new_equipment_path %></p>
+
 <table>
   <tr>
     <th>Name</th>
@@ -19,5 +21,3 @@
 <p>
   <%= will_paginate @equipments %>
 </p>
-
-<p><%= link_to "New Equipment", new_equipment_path %></p>

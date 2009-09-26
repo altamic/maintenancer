@@ -1,7 +1,7 @@
 <div id="user_nav">
   <% if current_user %>
   <p>
-    Welcome <%= current_user.name.split(' ').first %>!
+    <%= current_user.salutation %>
     <br/>
     <%= link_to "Profile", edit_user_path(current_user) %> |
     <%= link_to "Logout", logout_path %>

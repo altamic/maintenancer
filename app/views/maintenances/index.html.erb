@@ -7,8 +7,10 @@
 
 <% title "Maintenances (#{@maintenances_count})" %>
 <p class="actions">
-  <a id="filter_panel_link">Filter</a> | <%= link_to "Add New", new_maintenance_path %>  
+  <%= (link_to "Filter", "", {:id => "filter_panel_link"}) unless @maintenances_count.zero? %>
 </p>
+
+<%= link_to "Add New", new_maintenance_path %>  
 
 <% form_for @search do |f| %>
   <fieldset class="toggle">

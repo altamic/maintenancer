@@ -20,16 +20,14 @@
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
       
-      <div id="menu">
-      	<ul>
-      	  <li><%= link_to "Cosa &egrave;" %></li>
-          <li><%= link_to "Come Funziona" %></li>
-          <li><%= link_to "Iscriviti", new_user_path %></li>
-          <li><%= link_to "Entra", login_path %></li>
-          <li><%= link_to "Domande" %></li>
-          <li><%= link_to "Chi Siamo"%></li>
-        </ul>
-      </div>
+      <%=  render :partial => 'shared/user_nav' %>
+      
+      <% if current_user %>
+        <%= render "shared/#{current_user.role}_menu"  %>
+      <% else %>
+        <%= render "shared/guest_menu"  %>
+      <% end %>
+      
     </div>
     <!--end header -->
     <!-- main -->
