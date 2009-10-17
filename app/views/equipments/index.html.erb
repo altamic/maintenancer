@@ -1,7 +1,47 @@
-<% title "Equipments" %>
+<% content_for :head do %>
+<link type="text/css" href="/stylesheets/theme/ui.all.css" rel="Stylesheet" />
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/jquery_ui.js"></script>
+<script type="text/javascript" src="/javascripts/application.js"></script>
+<% end %>
 
-<p><%= link_to "New Equipment", new_equipment_path %></p>
+<% title "Equipments (#{@equipments_count})" %>
+<p class="actions">
+  <%= (link_to "Filter", "", {:id => "filter_panel_link"}) unless @equipments_count.zero? %>
+</p>
 
+<%= link_to "Add New", new_equipment_path %>  
+
+<% form_for @search do |f| %>
+  <fieldset class="toggle">
+    <p>
+      <%= f.label :id, 'Equipment:' %>
+      <%= f.collection_select :id, Equipment.all, :id, :name, { :include_blank => true } %>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <%= f.label :code_contains, 'Code:' %>
+      <%= f.text_field :code_contains, :size => 6 %>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <%= f.label :name_is, 'Description:' %>
+      <%= f.text_field :description_contains, :size => 14 %>
+      &nbsp;&nbsp;
+      
+      <%= f.label :maintenance_periodicity_in_months, "Periodicity:" %>
+      <%= f.text_field :maintenance_periodicity_in_months, :size  => 4 %>
+      &nbsp;&nbsp;
+      
+      <%= f.label :note_contains, 'Note:' %>
+      <%= f.text_field :note_contains, :size => 10 %>
+    </p>
+    
+      <%= f.submit 'Filter', :class => 'right' %>
+      |
+      <%= link_to 'Reset' %>
+
+  </fieldset>
+  
+<% end %>
 <table>
   <tr>
     <th>Name</th>

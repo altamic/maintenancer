@@ -10,6 +10,8 @@ class EquipmentsController < ApplicationController
   
   def new
     @equipment = current_user_role.equipments.build
+  rescue  NoMethodError
+    @equipment = current_user_role.equipments.new
   end
   
   def create

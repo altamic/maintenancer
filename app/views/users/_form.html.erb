@@ -38,7 +38,7 @@
     <%= f.password_field :password_confirmation, :size => 20 %>
   </p>
     
-  <% if current_user.not_technician? %>
+  <% if current_user && current_user.not_technician? %>
   <p>
     <%= f.label :address %>
     <%= f.text_area :address, :size => '30x4' %>

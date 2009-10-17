@@ -1,4 +1,26 @@
-fix show manteinance for technician
+icons:
+  - client
+  - technician
+  - maintenance
+  - equipment
+  - date
+  - note
+  - service_type:
+    - regular
+    - occasional
+    - urgent
+  - status:
+    - pending
+    - completed
+    - proposed
+    - refused
+  - late
+  
+Auto submit on:
+
+submit(
+
+Fix show manteinance for technician
 
 create automatic password
 

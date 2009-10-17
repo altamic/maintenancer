@@ -1,28 +1,24 @@
 <%= error_messages_for :equipment %>
 <% form_for @equipment, :url => equipments_url do |f| %>
   <p>
-    <%= f.label :created_at, "Created at" %>
-    <%= f.text_field :created_at, {:class  => 'date'} %>
-  </p>
-  <p>
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :size => "14" %>
   </p>
   <p>
     <%= f.label :code %><br />
-    <%= f.text_field :code %>
+    <%= f.text_field :code, :size => "14"  %>
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_field :description, :size => "42"  %>
   </p>
   <p>
     <%= f.label :note %><br />
-    <%= f.text_area :note %>
+    <%= f.text_area :note, :size => "40x6" %>
   </p>
   <p>
     <%= f.label :maintenance_periodicity_in_months %><br />
-    <%= f.text_field :maintenance_periodicity_in_months %>
+    <%= f.text_field :maintenance_periodicity_in_months, :size => 3 %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
